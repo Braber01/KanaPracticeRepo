@@ -1,0 +1,99 @@
+﻿<Window x:Class="KanaPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KanaPractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1366">
+    <Grid>
+        <!-- Initial Commit -->
+        <Grid.RowDefinitions>
+			<RowDefinition Height="0.5*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="0.5*" />
+		</Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+        <WrapPanel Grid.Row="0" Grid.Column="0" x:Name="a">
+            <TextBlock FontSize="28">Kana To Practice</TextBlock>
+            <ComboBox Name="cboKana" FontSize="28" HorizontalAlignment="Center">
+                <ComboBoxItem>Kanji Practice</ComboBoxItem>
+                <ComboBoxItem>a-i-u-e-o</ComboBoxItem>
+                <ComboBoxItem>ka-ki-ku-ke-ko</ComboBoxItem>
+                <ComboBoxItem>ga-gi-gu-ge-go</ComboBoxItem>
+                <ComboBoxItem>sa-shi-su-se-so</ComboBoxItem>
+                <ComboBoxItem>za-ji-zu-ze-zo</ComboBoxItem>
+                <ComboBoxItem>ta-chi-tsu-te-to</ComboBoxItem>
+                <ComboBoxItem>da-di-du-de-do</ComboBoxItem>
+                <ComboBoxItem>na-ni-nu-ne-no</ComboBoxItem>
+                <ComboBoxItem>ha-hi-fu-he-ho</ComboBoxItem>
+                <ComboBoxItem>ba-bi-bu-be-bo</ComboBoxItem>
+                <ComboBoxItem>pa-pi-pu-pe-po</ComboBoxItem>
+                <ComboBoxItem>ma-mi-mu-me-mo</ComboBoxItem>
+                <ComboBoxItem>ya-yu-yo</ComboBoxItem>
+                <ComboBoxItem>ra-ri-ru-re-ro</ComboBoxItem>
+                <ComboBoxItem>wa-wo-n</ComboBoxItem>
+                <ComboBoxItem>Compound Sounds</ComboBoxItem>
+			</ComboBox>
+		</WrapPanel>
+        <WrapPanel Grid.Row="0" Grid.Column="1" x:Name="b">
+            <TextBlock FontSize="28">Kanji: Level</TextBlock>
+            <ComboBox Name="cboKanji" FontSize="28">
+                <ComboBoxItem>Kana Practice</ComboBoxItem>
+                <ComboBoxItem>JLPT 5 (Easiest)</ComboBoxItem>
+                <ComboBoxItem>JLPT 4</ComboBoxItem>
+                <ComboBoxItem>JLPT 3</ComboBoxItem>
+                <ComboBoxItem>JLPT 2</ComboBoxItem>
+                <ComboBoxItem>JLPT 1 (Hardest)</ComboBoxItem>
+			</ComboBox>
+		</WrapPanel>
+        <WrapPanel Grid.Row="0" Grid.Column="2" x:Name="c">
+            <TextBlock FontSize="28">Points to play to:</TextBlock>
+            <ComboBox Name="cboPointsToEnd" FontSize="28">
+                <ComboBoxItem>5</ComboBoxItem>
+                <ComboBoxItem>6</ComboBoxItem>
+                <ComboBoxItem>7</ComboBoxItem>
+                <ComboBoxItem>8</ComboBoxItem>
+                <ComboBoxItem>9</ComboBoxItem>
+                <ComboBoxItem>10</ComboBoxItem>
+                <ComboBoxItem>15</ComboBoxItem>
+                <ComboBoxItem>20</ComboBoxItem>
+			</ComboBox>
+		</WrapPanel>
+        <WrapPanel Grid.Row="0" Grid.Column="3" x:Name="d">
+            <TextBlock FontSize="28">Points:</TextBlock>
+            <Label Name="lblPoints" FontSize="28" Content="0" />
+        </WrapPanel>
+        <WrapPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" x:Name="e">
+            <RadioButton Name="radHiragana" Content="Hiragana" FontSize="28" />
+            <RadioButton Name="radKatakana" Content="Katakana" FontSize="28" />
+            <RadioButton Name="radMixed" Content="Mixed Kana" FontSize="28" />
+        </WrapPanel>
+        <WrapPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" x:Name="f">
+			<Label FontSize="28" Name="lblError" Foreground="Red" Content="Error" />
+			<Label FontSize="28" Name="lblKana" Foreground="Black" Content="Kana" />
+		</WrapPanel>
+        <WrapPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" x:Name="g">
+            <TextBox Name="txtRomanji" FontSize="28" HorizontalAlignment="Center" Width="1366" Margin="30" />
+        </WrapPanel>
+        <WrapPanel Grid.Row="4" Grid.Column="0" x:Name="h">
+			<Button Name="btnStartGame" FontSize="28" Content="Start" />
+        </WrapPanel>
+        <WrapPanel Grid.Row="4" Grid.Column="1" x:Name="i">
+			<Button Name="btnCheck" FontSize="28" Content="Check Answer" />
+		</WrapPanel>
+        <WrapPanel Grid.Row="4" Grid.Column="2" x:Name="j">
+			<Button Name="btnNext" Content="Next Kana" FontSize="28" />
+		</WrapPanel>
+        <WrapPanel Grid.Row="4" Grid.Column="3" x:Name="k">
+			<Button Name="btnQuit" Content="Quit" FontSize="28" />
+		</WrapPanel>
+    </Grid>
+</Window>
