@@ -1,0 +1,14 @@
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\bin\Debug\KanaPractice.exe.config
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\bin\Debug\KanaPractice.exe
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\bin\Debug\KanaPractice.pdb
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice.csprojResolveAssemblyReference.cache
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\MainWindow.g.cs
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\App.g.cs
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice_MarkupCompile.cache
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice_MarkupCompile.lref
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\MainWindow.baml
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice.g.resources
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice.Properties.Resources.resources
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice.csproj.GenerateResource.Cache
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice.exe
+C:\Users\Bens Computer\Documents\GitHub\KanaPractice\KanaPractice\obj\Debug\KanaPractice.pdb
