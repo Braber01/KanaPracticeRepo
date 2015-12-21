@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<kana>
+	<hirg>
+		<aiueo>
+			<a romanji="a" kana="あ" />
+			<i romanji="i" kana="い" />
+			<u romanji="u" kana="う" />
+			<e romanji="e" kana="え" />
+			<o romanji="o" kana="お" />
+		</aiueo>
+		<kSeries>
+			<ka romanji="ka" kana="か" />
+			<ki romanji="ki" kana="き" />
+			<ku romanji="ku" kana="く" />
+			<ke romanji="ke" kana="け" />
+			<ko romanji="ko" kana="こ" />
+		</kSeries>
+		<gSeries>
+			<ga romanji="ga" kana="が" />
+			<gi romanji="gi" kana="ぎ" />
+			<gu romanji="gu" kana="ぐ" />
+			<ge romanji="ge" kana="げ" />
+			<go romanji="go" kana="ご" />
+		</gSeries>
+		<comboK>
+			<kya romanji="kya" kana="きゃ" />
+			<kyu romanji="kyu" kana="きゅ" />
+			<kyo romanji="kyo" kana="きょ" />
+		</comboK>
+		<comboG>
+			<gya romanji="gya" kana="ぎゃ" />
+			<gyu romanji="gyu" kana="ぎゅ" />
+			<gyo romanji="gyo" kana="ぎょ" />
+		</comboG>
+		<sSeries>
+			<sa romanji="sa" kana="さ" />
+			<shi romanji="shi,si" kana="し" />
+			<su romanji="su" kana="す" />
+			<se romanji="se" kana="せ" />
+			<so romanji="so" kana="そ" />
+		</sSeries>
+		<zSeries>
+			<za romanji="za" kana="ざ" />
+			<ji romanji="ji,zi" kana="じ" />
+			<zu romanji="zu" kana="ず" />
+			<ze romanji="ze" kana="ぜ" />
+			<zo romanji="zo" kana="ぞ" />
+		</zSeries>
+		<comboS>
+			<sha romanji="sha" kana="しゃ" />
+			<shu romanji="shu" kana="しゅ" />
+			<sho romanji="sho" kana="しょ" />
+		</comboS>
+		<comboJ>
+			<ja romanji="ja" kana="じゃ" />
+			<ju romanji="ju" kana="じゅ" />
+			<jo romanji="jo" kana="じょ" />
+		</comboJ>
+		<tSeries>
+			<ta romanji="ta" kana="た" />
+			<chi romanji="chi,ti" kana="ち" />
+			<tsu romanji="tsu,tu" kana="つ" />
+			<te romanji="te" kana="て" />
+			<to romanji="to" kana="と" />
+		</tSeries>
+	
+	</hirg>
+</kana>
