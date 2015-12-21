@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <kana>
-	<hirg>
+	<hirg> <!-- Japanese Hiragana -->
 		<aiueo>
 			<a romanji="a" kana="あ" />
 			<i romanji="i" kana="い" />
@@ -141,5 +141,27 @@
 			<myu romanji="myu" kana="みゅ" />
 			<myo romanji="myo" kana="みょ" />
 		</comboM>
+		<ySeries>
+			<ya romanji="ya" kana="や" />
+			<yu romanji="yu" kana="ゆ" />
+			<yo romanji="yo" kana="よ" />
+		</ySeries>
+		<rSeries>
+			<ra romanji="ra" kana="ら" />
+			<ri romanji="ri" kana="り" />
+			<ru romanji="ru" kana="る" />
+			<re romanji="re" kana="れ" />
+			<ro romanji="ro" kana="ろ" />
+		</rSeries>
+		<comboR>
+			<rya romanji="rya" kana="りゃ" />
+			<ryu romanji="ryu" kana="りゅ" />
+			<ryo romanji="ryo" kana="りょ" />
+		</comboR>
+		<wSeries>
+			<wa romanji="wa" kana="わ" />
+			<wo romanji="wo" kana="を" />
+			<n romanji="n" kana="ん" />
+		</wSeries>
 	</hirg>
 </kana>
