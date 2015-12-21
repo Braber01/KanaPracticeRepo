@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <kana>
-	<hirg> <!-- Japanese Hiragana -->
+	<hirg>
 		<aiueo>
 			<a romanji="a" kana="あ" />
 			<i romanji="i" kana="い" />
@@ -9,6 +9,7 @@
 			<e romanji="e" kana="え" />
 			<o romanji="o" kana="お" />
 		</aiueo>
+		
 		<kSeries>
 			<ka romanji="ka" kana="か" />
 			<ki romanji="ki" kana="き" />
@@ -33,6 +34,7 @@
 			<gyu romanji="gyu" kana="ぎゅ" />
 			<gyo romanji="gyo" kana="ぎょ" />
 		</comboG>
+		
 		<sSeries>
 			<sa romanji="sa" kana="さ" />
 			<shi romanji="shi,si" kana="し" />
@@ -57,6 +59,7 @@
 			<ju romanji="ju" kana="じゅ" />
 			<jo romanji="jo" kana="じょ" />
 		</comboJ>
+		
 		<tSeries>
 			<ta romanji="ta" kana="た" />
 			<chi romanji="chi,ti" kana="ち" />
@@ -81,6 +84,7 @@
 			<dyu romanji="dyu" kana="ぢゅ" />
 			<dyo romanji="dyo" kana="ぢょ" />
 		</comboD>
+		
 		<nSeries>
 			<na romanji="na" kana="な" />
 			<ni romanji="ni" kana="に" />
@@ -93,6 +97,7 @@
 			<nyu romanji="nyu" kana="にゅ" />
 			<nyo romanji="nyo" kana="にょ" />
 		</comboN>
+		
 		<hSeries>
 			<ha romanji="ha" kana="は" />
 			<hi romanji="hi" kana="ひ" />
@@ -129,6 +134,7 @@
 			<pyu romanji="pyu" kana="ぴゅ" />
 			<pyo romanji="pyo" kana="ぴょ" />
 		</comboP>
+		
 		<mSeries>
 			<ma romanji="ma" kana="ま" />
 			<mi romanji="mi" kana="み" />
@@ -141,11 +147,13 @@
 			<myu romanji="myu" kana="みゅ" />
 			<myo romanji="myo" kana="みょ" />
 		</comboM>
+		
 		<ySeries>
 			<ya romanji="ya" kana="や" />
 			<yu romanji="yu" kana="ゆ" />
 			<yo romanji="yo" kana="よ" />
 		</ySeries>
+		
 		<rSeries>
 			<ra romanji="ra" kana="ら" />
 			<ri romanji="ri" kana="り" />
@@ -158,10 +166,138 @@
 			<ryu romanji="ryu" kana="りゅ" />
 			<ryo romanji="ryo" kana="りょ" />
 		</comboR>
+		
 		<wSeries>
 			<wa romanji="wa" kana="わ" />
 			<wo romanji="wo" kana="を" />
 			<n romanji="n" kana="ん" />
 		</wSeries>
-	</hirg>
+	</hirg> <!-- Japanese Hiragana-->
+	
+	<kata>
+		<aiueo>
+			<a romanji="a" kana="ア" />
+			<i romanji="i" kana="イ" />
+			<u romanji="u" kana="ウ" />
+			<e romanji="e" kana="エ" />
+			<o romanji="o" kana="オ" />
+		</aiueo>
+
+		<kSeries>
+			<ka romanji="ka" kana="カ" />
+			<ki romanji="ki" kana="キ" />
+			<ku romanji="ku" kana="ク" />
+			<ke romanji="ke" kana="ケ" />
+			<ko romanji="ko" kana="コ" />
+		</kSeries>
+		<gSeries>
+			<ga romanji="ga" kana="ガ" />
+			<gi romanji="gi" kana="ギ" />
+			<gu romanji="gu" kana="グ" />
+			<ge romanji="ge" kana="ゲ" />
+			<go romanji="go" kana="ゴ" />
+		</gSeries>
+		<comboK>
+			<kya romanji="kya" kana="キャ" />
+			<kyu romanji="kyu" kana="キュ" />
+			<kyo romanji="kyo" kana="キョ" />
+		</comboK>
+		<comboG>
+			<gya romanji="gya" kana="ギャ" />
+			<gyu romanji="gyu" kana="ギュ" />
+			<gyo romanji="gyo" kana="ギョ" />
+		</comboG>
+
+		<sSeries>
+			<sa romanji="sa" kana="サ" />
+			<shi romanji="shi" kana="シ" />
+			<su romanji="su" kana="ス" />
+			<se romanji="se" kana="セ" />
+			<so romanji="so" kana="ソ" />
+		</sSeries>
+		<zSeries>
+			<za romanji="za" kana="ザ" />
+			<ji romanji="ji,zi" kana="ジ" />
+			<zu romanji="zu" kana="ズ" />
+			<ze romanji="ze" kana="ゼ" />
+			<zo romanji="zo" kana="ゾ" />
+		</zSeries>
+		<comboS>
+			<sha romanji="sha" kana="シャ" />
+			<shu romanji="shu" kana="シュ" />
+			<sho romanji="sho" kana="ショ" />
+		</comboS>
+		<comboJ>
+			<ja romanji="ja" kana="ジャ" />
+			<ju romanji="ju" kana="ジュ" />
+			<jo romanji="jo" kana="ジョ" />
+		</comboJ>
+
+		<tSeries>
+			<ta romanji="ta" kana="タ" />
+			<chi romanji="chi,ti" kana="チ" />
+			<tsu romanji="tsu,tu" kana="ツ" />
+			<te romanji="te" kana="テ" />
+			<to romanji="to" kana="ト" />
+		</tSeries>
+		<dSeries>
+			<da romanji="da" kana="ダ" />
+			<di romanji="di" kana="ヂ" />
+			<du romanji="du" kana="ヅ" />
+			<de romanji="de" kana="デ" />
+			<do romanji="do" kana="ド" />
+		</dSeries>
+		<comboCH>
+			<cha romanji="cha" kana="チャ" />
+			<chu romanji="chu" kana="チュ" />
+			<cho romanji="cho" kana="チョ" />
+		</comboCH>
+		<comboD>
+			<dya romanji="dya" kana="ヂャ" />
+			<dyu romanji="dyu" kana="ヂュ" />
+			<dyo romanji="dyo" kana="ヂョ" />
+		</comboD>
+
+		<nSeries>
+			<na romanji="na" kana="ナ" />
+			<ni romanji="ni" kana="ニ" />
+			<nu romanji="nu" kana="ヌ" />
+			<ne romanji="ne" kana="ネ" />
+			<no romanji="no" kana="ノ" />
+		</nSeries>
+		<comboN>
+			<nya romanji="nya" kana="ニャ" />
+			<nyu romanji="nyu" kana="ニュ" />
+			<nyo romanji="nyo" kana="ニョ" />
+		</comboN>
+
+		<hSeries>
+			<ha romanji="ha" kana="ハ" />
+			<hi romanji="hi" kana="ヒ" />
+			<fu romanji="fu,hu" kana="フ" />
+			<he romanji="he" kana="ヘ" />
+			<ho romanji="ho" kana="ホ" />
+		</hSeries>
+		<bSeries>
+			<ba romanji="ba" kana="バ" />
+			<bi romanji="bi" kana="ビ" />
+			<bu romanji="bu" kana="ブ" />
+			<be romanji="be" kana="ベ" />
+			<bo romanji="bo" kana="ボ" />
+		</bSeries>
+		<pSeries>
+			<pa romanji="pa" kana="パ" />
+			<pi romanji="pi" kana="ピ" />
+			<pu romanji="pu" kana="プ" />
+			<pe romanji="pe" kana="ペ" />
+			<po romanji="po" kana="ポ" />
+		</pSeries>
+		<comboH>
+			<hya romanji="hya" kana="ヒャ" />
+			<hyu romanji="hyu" kana="ヒュ" />
+			<hyo romanji="hyo" kana="ヒョ" />
+		</comboH>
+		<comboB></comboB>
+		<comboP></comboP>
+	</kata> <!-- Japanese Katakana-->
 </kana>
