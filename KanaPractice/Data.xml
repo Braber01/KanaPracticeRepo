@@ -64,6 +64,82 @@
 			<te romanji="te" kana="て" />
 			<to romanji="to" kana="と" />
 		</tSeries>
-	
+		<dSeries>
+			<da romanji="da" kana="だ" />
+			<di romanji="di" kana="ぢ" />
+			<du romanji="du" kana="づ" />
+			<de romanji="de" kana="で" />
+			<do romanji="do" kana="ど" />
+		</dSeries>
+		<comboCH>
+			<cha romanji="cha" kana="ちゃ" />
+			<chu romanji="chu" kana="ちゅ" />
+			<cho romanji="cho" kana="ちょ" />
+		</comboCH>
+		<comboD>
+			<dya romanji="dya" kana="ぢゃ" />
+			<dyu romanji="dyu" kana="ぢゅ" />
+			<dyo romanji="dyo" kana="ぢょ" />
+		</comboD>
+		<nSeries>
+			<na romanji="na" kana="な" />
+			<ni romanji="ni" kana="に" />
+			<nu romanji="nu" kana="ぬ" />
+			<ne romanji="ne" kana="ね" />
+			<no romanji="no" kana="の" />
+		</nSeries>
+		<comboN>
+			<nya romanji="nya" kana="にゃ" />
+			<nyu romanji="nyu" kana="にゅ" />
+			<nyo romanji="nyo" kana="にょ" />
+		</comboN>
+		<hSeries>
+			<ha romanji="ha" kana="は" />
+			<hi romanji="hi" kana="ひ" />
+			<fu romanji="fu,hu" kana="ふ" />
+			<he romanji="he" kana="へ" />
+			<ho romanji="ho" kana="ほ" />
+		</hSeries>
+		<bSeries>
+			<ba romanji="ba" kana="ば" />
+			<bi romanji="bi" kana="び" />
+			<bu romanji="bu" kana="ぶ" />
+			<be romanji="be" kana="べ" />
+			<bo romanji="bo" kana="ぼ" />
+		</bSeries>
+		<pSeries>
+			<pa romanji="pa" kana="ぱ" />
+			<pi romanji="pi" kana="ぴ" />
+			<pu romanji="pu" kana="ぷ" />
+			<pe romanji="pe" kana="ぺ" />
+			<po romanji="po" kana="ぽ" />
+		</pSeries>
+		<comboH>
+			<hya romanji="hya" kana="ひゃ" />
+			<hyu romanji="hyu" kana="ひゅ" />
+			<hyo romanji="hyo" kana="ひょ" />
+		</comboH>
+		<comboB>
+			<bya romanji="bya" kana="びゃ" />
+			<byu romanji="byu" kana="びゅ" />
+			<byo romanji="byo" kana="びょ" />
+		</comboB>
+		<comboP>
+			<pya romanji="pya" kana="ぴゃ" />
+			<pyu romanji="pyu" kana="ぴゅ" />
+			<pyo romanji="pyo" kana="ぴょ" />
+		</comboP>
+		<mSeries>
+			<ma romanji="ma" kana="ま" />
+			<mi romanji="mi" kana="み" />
+			<mu romanji="mu" kana="む" />
+			<me romanji="me" kana="め" />
+			<mo romanji="mo" kana="も" />
+		</mSeries>
+		<comboM>
+			<mya romanji="mya" kana="みゃ" />
+			<myu romanji="myu" kana="みゅ" />
+			<myo romanji="myo" kana="みょ" />
+		</comboM>
 	</hirg>
 </kana>
