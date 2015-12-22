@@ -78,7 +78,7 @@ namespace KanaPractice {
                     "/kana/hirg/kSeries/ko","/kana/kata/kSeries/ko"
                 }; //0-9
             } //End Init
-        } //End Struct
+        } //End Struct kSeries
 
         public struct gSeries {
             public string[] hirg;
@@ -110,7 +110,7 @@ namespace KanaPractice {
                     "/kana/hirg/gSeries/go","/kana/kata/gSeries/go"
                 }; // 0-9
             } //end Init
-        }
+        } //End Struct gSeries
 
         public struct comboK {
             public string[] hirg;
@@ -138,7 +138,7 @@ namespace KanaPractice {
 
 
             } //End Init
-        } //End Struct
+        } //End Struct comboK
 
         public struct comboG {
             public string[] hirg;
@@ -164,7 +164,7 @@ namespace KanaPractice {
                     "/kana/hirg/comboG/gyo","/kana/kata/comboG/gyo"
                 };
             } //End Init
-        } //End Struct
+        } //End Struct comboG
         #endregion
 
         #region S/Z
@@ -198,7 +198,7 @@ namespace KanaPractice {
                     ""
                 };
             } //end Init
-        } //end Struct
+        } //end Struct sSeries
 
         public struct zSeries {
             public string[] hirg;
@@ -231,7 +231,7 @@ namespace KanaPractice {
                 };
 
             } //End init()
-        } //End Struct
+        } //End Struct zSeries
 
         public struct comboS {
             public string[] hirg;
@@ -257,7 +257,7 @@ namespace KanaPractice {
                     "/kana/hirg/comboS/sho","/kana/kata/comboS/sho"
                 };
             }//End Init
-        } //End Struct
+        } //End Struct comboS
 
         public struct comboJ {
             public string[] hirg;
@@ -284,7 +284,7 @@ namespace KanaPractice {
                     "/kana/hirg/comboJ/jo","/kana/kata/comboJ/jo"
                 };
             }//End Init
-        } //End Struct
+        } //End Struct comboJ
         #endregion
 
         #region T/D
@@ -350,18 +350,63 @@ namespace KanaPractice {
                     "/kana/hirg/dSeries/do","/kana/kata/dSeries/do"
                 };
             } //End Init
-        } //End Struct
+        } //End Struct dSeries
 
         public struct comboCH {
             public string[] hirg;
             public string[] kata;
             public string[] mixed;
 
-            public void init() { }//End Init
-        }
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboCH/cha",
+                    "/kana/hirg/comboCH/chu",
+                    "/kana/hirg/comboCH/cho"
+                };
 
-        public struct comboD { }
+                kata = new string[] {
+                    "/kana/kata/comboCH/cha",
+                    "/kana/kata/comboCH/chu",
+                    "/kana/kata/comboCH/cho"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboCH/cha","/kana/kata/comboCH/cha",
+                    "/kana/hirg/comboCH/chu","/kana/kata/comboCH/chu",
+                    "/kana/hirg/comboCH/cho","/kana/kata/comboCH/cho"
+                };
+            }//End Init
+        } //End Struct comboCH
+
+        public struct comboD {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboD/dya",
+                    "/kana/hirg/comboD/dyu",
+                    "/kana/hirg/comboD/dyo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboD/dya",
+                    "/kana/kata/comboD/dyu",
+                    "/kana/kata/comboD/dyo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboD/dya","/kana/kata/comboD/dya",
+                    "/kana/hirg/comboD/dyu","/kana/kata/comboD/dyu",
+                    "/kana/hirg/comboD/dyo","/kana/kata/comboD/dyo"
+                };
+
+            }//End Init 
+        }//End Struct comboD
         #endregion
+
+
 
 
 
