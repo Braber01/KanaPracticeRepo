@@ -13,7 +13,8 @@ namespace KanaPractice {
     /// wants to practice.
     /// </summary>
     public static class XPaths {
-        
+
+        #region aiueo
         public struct aiueo {
             public string[] hirg;
             public string[] kata;
@@ -44,7 +45,7 @@ namespace KanaPractice {
                 }; //0-9
             } //End Init
         } //End Struct
-
+        #endregion
 
         #region K/G
         public struct kSeries {
@@ -648,6 +649,66 @@ namespace KanaPractice {
         }//End Struct
         #endregion
 
+        #region M
+        public struct mSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/mSeries/ma",
+                    "/kana/hirg/mSeries/mi",
+                    "/kana/hirg/mSeries/mu",
+                    "/kana/hirg/mSeries/me",
+                    "/kana/hirg/mSeries/mo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/mSeries/ma",
+                    "/kana/kata/mSeries/mi",
+                    "/kana/kata/mSeries/mu",
+                    "/kana/kata/mSeries/me",
+                    "/kana/kata/mSeries/mo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/mSeries/ma","/kana/kata/mSeries/ma",
+                    "/kana/hirg/mSeries/mi","/kana/kata/mSeries/mi",
+                    "/kana/hirg/mSeries/mu","/kana/kata/mSeries/mu",
+                    "/kana/hirg/mSeries/me","/kana/kata/mSeries/me",
+                    "/kana/hirg/mSeries/mo","/kana/kata/mSeries/mo"
+                };
+            } //End Init
+        } //End Struct
+
+        public struct comboM {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboM/mya",
+                    "/kana/hirg/comboM/myu",
+                    "/kana/hirg/comboM/myo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboM/mya",
+                    "/kana/kata/comboM/myu",
+                    "/kana/kata/comboM/myo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboM/mya","/kana/kata/comboM/mya",
+                    "/kana/hirg/comboM/myu","/kana/kata/comboM/myu",
+                    "/kana/hirg/comboM/myo","/kana/kata/comboM/myo"
+                };
+            } //End Init
+        }//End Struct
+
+        #endregion
 
 
 
