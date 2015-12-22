@@ -19,7 +19,7 @@ namespace KanaPractice {
             public string[] hirg;
             public string[] kata;
             public string[] mixed;
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/aiueo/a",
                     "/kana/hirg/aiueo/i",
@@ -53,7 +53,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 //aiueo
                 hirg = new string[] {
                     "/kana/hirg/kSeries/ka",
@@ -86,7 +86,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/gSeries/ga",
                     "/kana/hirg/gSeries/gi",
@@ -118,7 +118,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboK/kya",
                     "/kana/hirg/comboK/kyu",
@@ -146,7 +146,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboG/gya",
                     "/kana/hirg/comboG/gyu",
@@ -174,7 +174,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/sSeries/sa",
                     "/kana/hirg/sSeries/shi",
@@ -196,7 +196,7 @@ namespace KanaPractice {
                     "/kana/hirg/sSeries/shi","/kana/kata/sSeries/shi",
                     "/kana/hirg/sSeries/su","/kana/kata/sSeries/su",
                     "/kana/hirg/sSeries/se","/kana/kata/sSeries/se",
-                    ""
+                    "/kana/hirg/sSeries/so","/kana/kata/sSeries/so"
                 };
             } //end Init
         } //end Struct sSeries
@@ -206,7 +206,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/zSeries/za",
                     "/kana/hirg/zSeries/ji",
@@ -239,7 +239,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboS/sha",
                     "/kana/hirg/comboS/shu",
@@ -265,7 +265,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
 
                 hirg = new string[] {
                     "/kana/hirg/comboJ/ja",
@@ -294,7 +294,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/tSeries/ta",
                     "/kana/hirg/tSeries/chi",
@@ -326,7 +326,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/dSeries/da",
                     "/kana/hirg/dSeries/di",
@@ -358,7 +358,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboCH/cha",
                     "/kana/hirg/comboCH/chu",
@@ -384,7 +384,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboD/dya",
                     "/kana/hirg/comboD/dyu",
@@ -413,7 +413,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/nSeries/na",
                     "/kana/hirg/nSeries/ni",
@@ -447,7 +447,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboN/nya",
                     "/kana/hirg/comboN/nyu",
@@ -476,7 +476,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/hSeries/ha",
                     "/kana/hirg/hSeries/hi",
@@ -508,7 +508,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/bSeries/ba",
                     "/kana/hirg/bSeries/bi",
@@ -541,7 +541,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/pSeries/pa",
                     "/kana/hirg/pSeries/pi",
@@ -574,7 +574,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboH/hya",
                     "/kana/hirg/comboH/hyu",
@@ -600,7 +600,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboB/bya",
                     "/kana/hirg/comboB/byu",
@@ -626,7 +626,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboP/pya",
                     "/kana/hirg/comboP/pyu",
@@ -655,7 +655,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/mSeries/ma",
                     "/kana/hirg/mSeries/mi",
@@ -687,7 +687,7 @@ namespace KanaPractice {
             public string[] kata;
             public string[] mixed;
 
-            public void init() {
+            public void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboM/mya",
                     "/kana/hirg/comboM/myu",
@@ -710,7 +710,101 @@ namespace KanaPractice {
 
         #endregion
 
+        #region Y
+        public struct ySeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
 
+            public void Init() {
+                hirg = new string[] {
+                    "/kana/hirg/ySeries/ya",
+                    "/kana/hirg/ySeries/yu",
+                    "/kana/hirg/ySeries/yo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/ySeries/ya",
+                    "/kana/kata/ySeries/yu",
+                    "/kana/kata/ySeries/yo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/ySeries/ya","/kana/kata/ySeries/ya",
+                    "/kana/hirg/ySeries/yu","/kana/kata/ySeries/yu",
+                    "/kana/hirg/ySeries/yo","/kana/kata/ySeries/yo"
+                };
+            }//End INit
+        }//End Struct
+        #endregion
+
+        #region R
+        public struct rSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void Init() {
+                hirg = new string[] {
+                    "/kana/hirg/rSeries/ra",
+                    "/kana/hirg/rSeries/ri",
+                    "/kana/hirg/rSeries/ru",
+                    "/kana/hirg/rSeries/re",
+                    "/kana/hirg/rSeries/ro"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/rSeries/ra",
+                    "/kana/kata/rSeries/ri",
+                    "/kana/kata/rSeries/ru",
+                    "/kana/kata/rSeries/re",
+                    "/kana/kata/rSeries/ro"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/rSeries/ra","/kana/kata/rSeries/ra",
+                    "/kana/hirg/rSeries/ri","/kana/kata/rSeries/ri",
+                    "/kana/hirg/rSeries/ru","/kana/kata/rSeries/ru",
+                    "/kana/hirg/rSeries/re","/kana/kata/rSeries/re",
+                    "/kana/hirg/rSeries/ro","/kana/kata/rSeries/ro"
+                };
+            }
+
+        } //End Struct
+
+        public struct comboR {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void Init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboR/rya",
+                    "/kana/hirg/comboR/ryu",
+                    "/kana/hirg/comboR/ryo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboR/rya",
+                    "/kana/kata/comboR/ryu",
+                    "/kana/kata/comboR/ryo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboR/rya","/kana/kata/comboR/rya",
+                    "/kana/hirg/comboR/ryu","/kana/kata/comboR/ryu",
+                    "/kana/hirg/comboR/ryo","/kana/kata/comboR/ryo"
+                };
+
+            }
+
+        }
+
+        #endregion
+
+        #region W
+
+        #endregion
 
 
     }
