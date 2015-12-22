@@ -439,7 +439,7 @@ namespace KanaPractice {
 
             }//End Init
 
-        }
+        } 
 
         public struct comboN {
             public string[] hirg;
@@ -470,12 +470,185 @@ namespace KanaPractice {
         #endregion
 
         #region H/B/P
-        public struct hSeries { }
-        public struct bSeries { }
-        public struct pSeries { }
+        public struct hSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
 
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/hSeries/ha",
+                    "/kana/hirg/hSeries/hi",
+                    "/kana/hirg/hSeries/fu",
+                    "/kana/hirg/hSeries/he",
+                    "/kana/hirg/hSeries/ho"
+                };
 
+                kata = new string[] {
+                    "/kana/kata/hSeries/ha",
+                    "/kana/kata/hSeries/hi",
+                    "/kana/kata/hSeries/fu",
+                    "/kana/kata/hSeries/he",
+                    "/kana/kata/hSeries/ho"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/hSeries/ha","/kana/kata/hSeries/ha",
+                    "/kana/hirg/hSeries/hi","/kana/kata/hSeries/hi",
+                    "/kana/hirg/hSeries/fu","/kana/kata/hSeries/fu",
+                    "/kana/hirg/hSeries/he","/kana/kata/hSeries/he",
+                    "/kana/hirg/hSeries/ho","/kana/kata/hSeries/ho"
+                };
+            } //End Init
+        } //End Structure hSeries
+
+        public struct bSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/bSeries/ba",
+                    "/kana/hirg/bSeries/bi",
+                    "/kana/hirg/bSeries/bu",
+                    "/kana/hirg/bSeries/be",
+                    "/kana/hirg/bSeries/bo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/bSeries/ba",
+                    "/kana/kata/bSeries/bi",
+                    "/kana/kata/bSeries/bu",
+                    "/kana/kata/bSeries/be",
+                    "/kana/kata/bSeries/bo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/bSeries/ba","/kana/kata/bSeries/ba",
+                    "/kana/hirg/bSeries/bi","/kana/kata/bSeries/bi",
+                    "/kana/hirg/bSeries/bu","/kana/kata/bSeries/bu",
+                    "/kana/hirg/bSeries/be","/kana/kata/bSeries/be",
+                    "/kana/hirg/bSeries/bo","/kana/kata/bSeries/bo"
+                };
+            } //End Init()
+
+        } //End Structure bSeries
+
+        public struct pSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/pSeries/pa",
+                    "/kana/hirg/pSeries/pi",
+                    "/kana/hirg/pSeries/pu",
+                    "/kana/hirg/pSeries/pe",
+                    "/kana/hirg/pSeries/po"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/pSeries/pa",
+                    "/kana/kata/pSeries/pi",
+                    "/kana/kata/pSeries/pu",
+                    "/kana/kata/pSeries/pe",
+                    "/kana/kata/pSeries/po"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/pSeries/pa","/kana/kata/pSeries/pa",
+                    "/kana/hirg/pSeries/pi","/kana/kata/pSeries/pi",
+                    "/kana/hirg/pSeries/pu","/kana/kata/pSeries/pu",
+                    "/kana/hirg/pSeries/pe","/kana/kata/pSeries/pe",
+                    "/kana/hirg/pSeries/po","/kana/kata/pSeries/po"
+                };
+            }//End Init
+
+        } //End Structure pSeries
+
+        public struct comboH {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboH/hya",
+                    "/kana/hirg/comboH/hyu",
+                    "/kana/hirg/comboH/hyo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboH/hya",
+                    "/kana/kata/comboH/hyu",
+                    "/kana/kata/comboH/hyo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboH/hya","/kana/kata/comboH/hya",
+                    "/kana/hirg/comboH/hyu","/kana/kata/comboH/hyu",
+                    "/kana/hirg/comboH/hyo","/kana/kata/comboH/hyo"
+                };
+            } //End INit
+        } //End Struct
+
+        public struct comboB {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboB/bya",
+                    "/kana/hirg/comboB/byu",
+                    "/kana/hirg/comboB/byo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboB/bya",
+                    "/kana/kata/comboB/byu",
+                    "/kana/kata/comboB/byo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboB/bya","/kana/kata/comboB/bya",
+                    "/kana/hirg/comboB/byu","/kana/kata/comboB/byu",
+                    "/kana/hirg/comboB/byo","/kana/kata/comboB/byo"
+                };
+            } //End Init
+        } //End Struct
+
+        public struct comboP {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboP/pya",
+                    "/kana/hirg/comboP/pyu",
+                    "/kana/hirg/comboP/pyo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboP/pya",
+                    "/kana/kata/comboP/pyu",
+                    "/kana/kata/comboP/pyo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboP/pya","/kana/kata/comboP/pya",
+                    "/kana/hirg/comboP/pyu","/kana/kata/comboP/pyu",
+                    "/kana/hirg/comboP/pyo","/kana/kata/comboP/pyo"
+                };
+
+            } //End Init
+        }//End Struct
         #endregion
+
+
 
 
 
