@@ -803,7 +803,31 @@ namespace KanaPractice {
         #endregion
 
         #region W
+        public struct wSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
 
+            public void Init() {
+                hirg = new string[] {
+                    "/kana/hirg/wSeries/wa",
+                    "/kana/hirg/wSeries/wo",
+                    "/kana/hirg/wSeries/n"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/wSeries/wa",
+                    "/kana/kata/wSeries/wo",
+                    "/kana/kata/wSeries/n"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/wSeries/wa","/kana/kata/wSeries/wa",
+                    "/kana/hirg/wSeries/wo","/kana/kata/wSeries/wo",
+                    "/kana/hirg/wSeries/n","/kana/kata/wSeries/n"
+                };
+            }//End Init
+        }//End Struct
         #endregion
 
 
