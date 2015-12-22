@@ -297,7 +297,53 @@
 			<hyu romanji="hyu" kana="ヒュ" />
 			<hyo romanji="hyo" kana="ヒョ" />
 		</comboH>
-		<comboB></comboB>
-		<comboP></comboP>
+		<comboB>
+			<bya romanji="bya" kana="ビャ" />
+			<byu romanji="byu" kana="ビュ" />
+			<byo romanji="byo" kana="ビョ" />
+		</comboB>
+		<comboP>
+			<pya romanji="pya" kana="ピャ" />
+			<pyu romanji="pyu" kana="ピュ" />
+			<pyo romanji="pyo" kana="ピョ" />
+		</comboP>
+
+		<mSeries>
+			<ma romanji="ma" kana="マ" />
+			<mi romanji="mi" kana="ミ" />
+			<mu romanji="mu" kana="ム" />
+			<me romanji="me" kana="メ" />
+			<mo romanji="mo" kana="モ" />
+		</mSeries>
+		<comboM>
+			<mya romanji="mya" kana="ミャ" />
+			<myu romanji="myu" kana="ミュ" />
+			<myo romanji="myo" kana="ミョ" />
+		</comboM>
+
+		<ySeries>
+			<ya romanji="ya" kana="ヤ" />
+			<yu romanji="yu" kana="ユ" />
+			<yo romanji="yo" kana="ヨ" />
+		</ySeries>
+
+		<rSeries>
+			<ra romanji="ra" kana="ラ" />
+			<ri romanji="ri" kana="リ" />
+			<ru romanji="ru" kana="ル" />
+			<re romanji="re" kana="レ" />
+			<ro romanji="ro" kana="ロ" />
+		</rSeries>
+		<comboR>
+			<rya romanji="rya" kana="リャ" />
+			<ryu romanji="ryu" kana="リュ" />
+			<ryo romanji="ryo" kana="リョ" />
+		</comboR>
+
+		<wSeries>
+			<wa romanji="wa" kana="ワ" />
+			<wo romanji="wo" kana="ヲ" />
+			<n romanji="n" kana="ン" />
+		</wSeries>
 	</kata> <!-- Japanese Katakana-->
 </kana>
