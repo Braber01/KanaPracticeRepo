@@ -2,6 +2,8 @@
 
 <kana>
 	<hirg>
+		
+		<!--Region aiueo -->
 		<aiueo>
 			<a romanji="a" kana="あ" />
 			<i romanji="i" kana="い" />
@@ -9,7 +11,9 @@
 			<e romanji="e" kana="え" />
 			<o romanji="o" kana="お" />
 		</aiueo>
-		
+		<!--End Region -->
+
+		<!-- Region K/G -->
 		<kSeries>
 			<ka romanji="ka" kana="か" />
 			<ki romanji="ki" kana="き" />
@@ -34,7 +38,9 @@
 			<gyu romanji="gyu" kana="ぎゅ" />
 			<gyo romanji="gyo" kana="ぎょ" />
 		</comboG>
-		
+		<!-- #End Region-->
+
+		<!--Region S/Z -->
 		<sSeries>
 			<sa romanji="sa" kana="さ" />
 			<shi romanji="shi,si" kana="し" />
@@ -59,7 +65,9 @@
 			<ju romanji="ju" kana="じゅ" />
 			<jo romanji="jo" kana="じょ" />
 		</comboJ>
+		<!--End Region-->
 		
+		<!--Region T/D -->
 		<tSeries>
 			<ta romanji="ta" kana="た" />
 			<chi romanji="chi,ti" kana="ち" />
@@ -84,7 +92,9 @@
 			<dyu romanji="dyu" kana="ぢゅ" />
 			<dyo romanji="dyo" kana="ぢょ" />
 		</comboD>
-		
+		<!--End Region-->
+
+		<!--Region N -->
 		<nSeries>
 			<na romanji="na" kana="な" />
 			<ni romanji="ni" kana="に" />
@@ -97,7 +107,9 @@
 			<nyu romanji="nyu" kana="にゅ" />
 			<nyo romanji="nyo" kana="にょ" />
 		</comboN>
+		<!--End Region -->
 		
+		<!--Region H/B/P -->
 		<hSeries>
 			<ha romanji="ha" kana="は" />
 			<hi romanji="hi" kana="ひ" />
@@ -134,7 +146,9 @@
 			<pyu romanji="pyu" kana="ぴゅ" />
 			<pyo romanji="pyo" kana="ぴょ" />
 		</comboP>
-		
+		<!-- End Region -->
+
+		<!-- Region M -->
 		<mSeries>
 			<ma romanji="ma" kana="ま" />
 			<mi romanji="mi" kana="み" />
@@ -147,13 +161,17 @@
 			<myu romanji="myu" kana="みゅ" />
 			<myo romanji="myo" kana="みょ" />
 		</comboM>
-		
+		<!-- End Region-->
+
+		<!--Region Y -->
 		<ySeries>
 			<ya romanji="ya" kana="や" />
 			<yu romanji="yu" kana="ゆ" />
 			<yo romanji="yo" kana="よ" />
 		</ySeries>
-		
+		<!--End Region -->
+
+		<!--Region R -->
 		<rSeries>
 			<ra romanji="ra" kana="ら" />
 			<ri romanji="ri" kana="り" />
@@ -166,15 +184,20 @@
 			<ryu romanji="ryu" kana="りゅ" />
 			<ryo romanji="ryo" kana="りょ" />
 		</comboR>
-		
+		<!--End Region-->
+
+		<!--Region W -->
 		<wSeries>
 			<wa romanji="wa" kana="わ" />
 			<wo romanji="wo" kana="を" />
 			<n romanji="n" kana="ん" />
 		</wSeries>
+		<!--End Region-->
+		
 	</hirg> <!-- Japanese Hiragana-->
 	
 	<kata>
+		<!--Region aiueo-->
 		<aiueo>
 			<a romanji="a" kana="ア" />
 			<i romanji="i" kana="イ" />
@@ -182,7 +205,9 @@
 			<e romanji="e" kana="エ" />
 			<o romanji="o" kana="オ" />
 		</aiueo>
+		<!--End Region -->
 
+		<!--Region K/G -->
 		<kSeries>
 			<ka romanji="ka" kana="カ" />
 			<ki romanji="ki" kana="キ" />
@@ -207,7 +232,9 @@
 			<gyu romanji="gyu" kana="ギュ" />
 			<gyo romanji="gyo" kana="ギョ" />
 		</comboG>
+		<!--End Region-->
 
+		<!--Region S/Z-->
 		<sSeries>
 			<sa romanji="sa" kana="サ" />
 			<shi romanji="shi" kana="シ" />
@@ -232,7 +259,9 @@
 			<ju romanji="ju" kana="ジュ" />
 			<jo romanji="jo" kana="ジョ" />
 		</comboJ>
+		<!--End region-->
 
+		<!--Region T/D-->
 		<tSeries>
 			<ta romanji="ta" kana="タ" />
 			<chi romanji="chi,ti" kana="チ" />
@@ -257,7 +286,9 @@
 			<dyu romanji="dyu" kana="ヂュ" />
 			<dyo romanji="dyo" kana="ヂョ" />
 		</comboD>
+		<!--End Region-->
 
+		<!-- Region N -->
 		<nSeries>
 			<na romanji="na" kana="ナ" />
 			<ni romanji="ni" kana="ニ" />
@@ -270,7 +301,9 @@
 			<nyu romanji="nyu" kana="ニュ" />
 			<nyo romanji="nyo" kana="ニョ" />
 		</comboN>
+		<!--End Region-->
 
+		<!--Region H/B/P-->
 		<hSeries>
 			<ha romanji="ha" kana="ハ" />
 			<hi romanji="hi" kana="ヒ" />
@@ -307,7 +340,9 @@
 			<pyu romanji="pyu" kana="ピュ" />
 			<pyo romanji="pyo" kana="ピョ" />
 		</comboP>
+		<!--End Region -->
 
+		<!--Region M -->
 		<mSeries>
 			<ma romanji="ma" kana="マ" />
 			<mi romanji="mi" kana="ミ" />
@@ -320,13 +355,17 @@
 			<myu romanji="myu" kana="ミュ" />
 			<myo romanji="myo" kana="ミョ" />
 		</comboM>
+		<!--End Region-->
 
+		<!--Region Y -->
 		<ySeries>
 			<ya romanji="ya" kana="ヤ" />
 			<yu romanji="yu" kana="ユ" />
 			<yo romanji="yo" kana="ヨ" />
 		</ySeries>
+		<!--End Region-->
 
+		<!--Region R -->
 		<rSeries>
 			<ra romanji="ra" kana="ラ" />
 			<ri romanji="ri" kana="リ" />
@@ -339,11 +378,15 @@
 			<ryu romanji="ryu" kana="リュ" />
 			<ryo romanji="ryo" kana="リョ" />
 		</comboR>
+		<!--End Region-->
 
+		<!--Region W -->
 		<wSeries>
 			<wa romanji="wa" kana="ワ" />
 			<wo romanji="wo" kana="ヲ" />
 			<n romanji="n" kana="ン" />
 		</wSeries>
+		<!--End Region-->
+		
 	</kata> <!-- Japanese Katakana-->
 </kana>
