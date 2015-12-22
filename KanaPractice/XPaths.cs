@@ -406,7 +406,76 @@ namespace KanaPractice {
         }//End Struct comboD
         #endregion
 
+        #region N
+        public struct nSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
 
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/nSeries/na",
+                    "/kana/hirg/nSeries/ni",
+                    "/kana/hirg/nSeries/nu",
+                    "/kana/hirg/nSeries/ne",
+                    "/kana/hirg/nSeries/no"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/nSeries/na",
+                    "/kana/kata/nSeries/ni",
+                    "/kana/kata/nSeries/nu",
+                    "/kana/kata/nSeries/ne",
+                    "/kana/kata/nSeries/no"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/nSeries/na","/kana/kata/nSeries/na",
+                    "/kana/hirg/nSeries/ni","/kana/kata/nSeries/ni",
+                    "/kana/hirg/nSeries/nu","/kana/kata/nSeries/nu",
+                    "/kana/hirg/nSeries/ne","/kana/kata/nSeries/ne",
+                    "/kana/hirg/nSeries/no","/kana/kata/nSeries/no"
+                };
+
+            }//End Init
+
+        }
+
+        public struct comboN {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboN/nya",
+                    "/kana/hirg/comboN/nyu",
+                    "/kana/hirg/comboN/nyo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboN/nya",
+                    "/kana/kata/comboN/nyu",
+                    "/kana/kata/comboN/nyo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboN/nya","/kana/kata/comboN/nya",
+                    "/kana/hirg/comboN/nyu","/kana/kata/comboN/nyu",
+                    "/kana/hirg/comboN/nyo","/kana/kata/comboN/nyo"
+                };
+            } //End init
+        } //End Struct
+
+        #endregion
+
+        #region H/B/P
+        public struct hSeries { }
+        public struct bSeries { }
+        public struct pSeries { }
+
+
+        #endregion
 
 
 
