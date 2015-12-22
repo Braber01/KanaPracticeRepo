@@ -200,8 +200,170 @@ namespace KanaPractice {
             } //end Init
         } //end Struct
 
+        public struct zSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/zSeries/za",
+                    "/kana/hirg/zSeries/ji",
+                    "/kana/hirg/zSeries/zu",
+                    "/kana/hirg/zSeries/ze",
+                    "/kana/hirg/zSeries/zo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/zSeries/za",
+                    "/kana/kata/zSeries/ji",
+                    "/kana/kata/zSeries/zu",
+                    "/kana/kata/zSeries/ze",
+                    "/kana/kata/zSeries/zo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/zSeries/za","/kana/kata/zSeries/za",
+                    "/kana/hirg/zSeries/ji","/kana/kata/zSeries/ji",
+                    "/kana/hirg/zSeries/zu","/kana/kata/zSeries/zu",
+                    "/kana/hirg/zSeries/ze","/kana/kata/zSeries/ze",
+                    "/kana/hirg/zSeries/zo","/kana/kata/zSeries/zo"
+                };
+
+            } //End init()
+        } //End Struct
+
+        public struct comboS {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboS/sha",
+                    "/kana/hirg/comboS/shu",
+                    "/kana/hirg/comboS/sho"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboS/sha",
+                    "/kana/kata/comboS/shu",
+                    "/kana/kata/comboS/sho"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboS/sha","/kana/kata/comboS/sha",
+                    "/kana/hirg/comboS/shu","/kana/kata/comboS/shu",
+                    "/kana/hirg/comboS/sho","/kana/kata/comboS/sho"
+                };
+            }//End Init
+        } //End Struct
+
+        public struct comboJ {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+
+                hirg = new string[] {
+                    "/kana/hirg/comboJ/ja",
+                    "/kana/hirg/comboJ/ju",
+                    "/kana/hirg/comboJ/jo"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboJ/ja",
+                    "/kana/kata/comboJ/ju",
+                    "/kana/kata/comboJ/jo"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboJ/ja","/kana/kata/comboJ/ja",
+                    "/kana/hirg/comboJ/ju","/kana/kata/comboJ/ju",
+                    "/kana/hirg/comboJ/jo","/kana/kata/comboJ/jo"
+                };
+            }//End Init
+        } //End Struct
+        #endregion
+
+        #region T/D
+        public struct tSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/tSeries/ta",
+                    "/kana/hirg/tSeries/chi",
+                    "/kana/hirg/tSeries/tsu",
+                    "/kana/hirg/tSeries/te",
+                    "/kana/hirg/tSeries/to"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/tSeries/ta",
+                    "/kana/kata/tSeries/chi",
+                    "/kana/kata/tSeries/tsu",
+                    "/kana/kata/tSeries/te",
+                    "/kana/kata/tSeries/to"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/tSeries/ta","/kana/kata/tSeries/ta",
+                    "/kana/hirg/tSeries/chi","/kana/kata/tSeries/chi",
+                    "/kana/hirg/tSeries/tsu","/kana/kata/tSeries/tsu",
+                    "/kana/hirg/tSeries/te","/kana/kata/tSeries/te",
+                    "/kana/hirg/tSeries/to","/kana/kata/tSeries/to"
+                };
+            } //End Init
+        } //End struct tSeries
+
+        public struct dSeries {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() {
+                hirg = new string[] {
+                    "/kana/hirg/dSeries/da",
+                    "/kana/hirg/dSeries/di",
+                    "/kana/hirg/dSeries/du",
+                    "/kana/hirg/dSeries/de",
+                    "/kana/hirg/dSeries/do"
+                };
+
+                kata = new string[] {
+                    "/kana/kata/dSeries/da",
+                    "/kana/kata/dSeries/di",
+                    "/kana/kata/dSeries/du",
+                    "/kana/kata/dSeries/de",
+                    "/kana/kata/dSeries/do"
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/dSeries/da","/kana/kata/dSeries/da",
+                    "/kana/hirg/dSeries/di","/kana/kata/dSeries/di",
+                    "/kana/hirg/dSeries/du","/kana/kata/dSeries/du",
+                    "/kana/hirg/dSeries/de","/kana/kata/dSeries/de",
+                    "/kana/hirg/dSeries/do","/kana/kata/dSeries/do"
+                };
+            } //End Init
+        } //End Struct
+
+        public struct comboCH {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void init() { }//End Init
+        }
+
+        public struct comboD { }
+        #endregion
 
 
-        
+
     }
 }
