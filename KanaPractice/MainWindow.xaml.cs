@@ -21,5 +21,13 @@ namespace KanaPractice {
         public MainWindow() {
             InitializeComponent();
         }
+
+        public void MainWindow_Loaded(object sender,EventArgs e) {
+
+        }
+
+        public void btnStartGame_Click(object sender,EventArgs e) {
+
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KanaPractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1366">
+        Title="MainWindow" Height="768" Width="1366" Loaded="MainWindow_Loaded">
     <Grid>
         <!-- Initial Commit -->
         <Grid.RowDefinitions>
@@ -84,7 +84,7 @@
             <TextBox Name="txtRomanji" FontSize="28" HorizontalAlignment="Center" Width="1366" Margin="30" />
         </WrapPanel>
         <WrapPanel Grid.Row="4" Grid.Column="0" x:Name="h">
-			<Button Name="btnStartGame" FontSize="28" Content="Start" />
+			<Button Name="btnStartGame" FontSize="28" Content="Start" Click="btnStartGame_Click" />
         </WrapPanel>
         <WrapPanel Grid.Row="4" Grid.Column="1" x:Name="i">
 			<Button Name="btnCheck" FontSize="28" Content="Check Answer" />

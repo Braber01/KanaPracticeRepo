@@ -271,78 +271,92 @@ namespace KanaPractice {
             switch (connectionId)
             {
             case 1:
-            this.a = ((System.Windows.Controls.WrapPanel)(target));
+            
+            #line 8 "..\..\MainWindow.xaml"
+            ((KanaPractice.MainWindow)(target)).Loaded += new System.Windows.RoutedEventHandler(this.MainWindow_Loaded);
+            
+            #line default
+            #line hidden
             return;
             case 2:
-            this.cboKana = ((System.Windows.Controls.ComboBox)(target));
+            this.a = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 3:
-            this.b = ((System.Windows.Controls.WrapPanel)(target));
+            this.cboKana = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 4:
-            this.cboKanji = ((System.Windows.Controls.ComboBox)(target));
+            this.b = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 5:
-            this.c = ((System.Windows.Controls.WrapPanel)(target));
+            this.cboKanji = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 6:
-            this.cboPointsToEnd = ((System.Windows.Controls.ComboBox)(target));
+            this.c = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 7:
-            this.d = ((System.Windows.Controls.WrapPanel)(target));
+            this.cboPointsToEnd = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 8:
-            this.lblPoints = ((System.Windows.Controls.Label)(target));
+            this.d = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 9:
-            this.e = ((System.Windows.Controls.WrapPanel)(target));
+            this.lblPoints = ((System.Windows.Controls.Label)(target));
             return;
             case 10:
-            this.radHiragana = ((System.Windows.Controls.RadioButton)(target));
+            this.e = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 11:
-            this.radKatakana = ((System.Windows.Controls.RadioButton)(target));
+            this.radHiragana = ((System.Windows.Controls.RadioButton)(target));
             return;
             case 12:
-            this.radMixed = ((System.Windows.Controls.RadioButton)(target));
+            this.radKatakana = ((System.Windows.Controls.RadioButton)(target));
             return;
             case 13:
-            this.f = ((System.Windows.Controls.WrapPanel)(target));
+            this.radMixed = ((System.Windows.Controls.RadioButton)(target));
             return;
             case 14:
-            this.lblError = ((System.Windows.Controls.Label)(target));
+            this.f = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 15:
-            this.lblKana = ((System.Windows.Controls.Label)(target));
+            this.lblError = ((System.Windows.Controls.Label)(target));
             return;
             case 16:
-            this.g = ((System.Windows.Controls.WrapPanel)(target));
+            this.lblKana = ((System.Windows.Controls.Label)(target));
             return;
             case 17:
-            this.txtRomanji = ((System.Windows.Controls.TextBox)(target));
+            this.g = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 18:
-            this.h = ((System.Windows.Controls.WrapPanel)(target));
+            this.txtRomanji = ((System.Windows.Controls.TextBox)(target));
             return;
             case 19:
-            this.btnStartGame = ((System.Windows.Controls.Button)(target));
+            this.h = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 20:
-            this.i = ((System.Windows.Controls.WrapPanel)(target));
+            this.btnStartGame = ((System.Windows.Controls.Button)(target));
+            
+            #line 87 "..\..\MainWindow.xaml"
+            this.btnStartGame.Click += new System.Windows.RoutedEventHandler(this.btnStartGame_Click);
+            
+            #line default
+            #line hidden
             return;
             case 21:
-            this.btnCheck = ((System.Windows.Controls.Button)(target));
+            this.i = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 22:
-            this.j = ((System.Windows.Controls.WrapPanel)(target));
+            this.btnCheck = ((System.Windows.Controls.Button)(target));
             return;
             case 23:
-            this.btnNext = ((System.Windows.Controls.Button)(target));
+            this.j = ((System.Windows.Controls.WrapPanel)(target));
             return;
             case 24:
-            this.k = ((System.Windows.Controls.WrapPanel)(target));
+            this.btnNext = ((System.Windows.Controls.Button)(target));
             return;
             case 25:
+            this.k = ((System.Windows.Controls.WrapPanel)(target));
+            return;
+            case 26:
             this.btnQuit = ((System.Windows.Controls.Button)(target));
             return;
             }
