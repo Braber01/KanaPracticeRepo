@@ -16,10 +16,10 @@ namespace KanaPractice {
 
         #region aiueo
         public struct aiueo {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
-            public void Init() {
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/aiueo/a",
                     "/kana/hirg/aiueo/i",
@@ -49,11 +49,11 @@ namespace KanaPractice {
 
         #region K/G
         public struct kSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 //aiueo
                 hirg = new string[] {
                     "/kana/hirg/kSeries/ka",
@@ -82,11 +82,11 @@ namespace KanaPractice {
         } //End Struct kSeries
 
         public struct gSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/gSeries/ga",
                     "/kana/hirg/gSeries/gi",
@@ -114,11 +114,11 @@ namespace KanaPractice {
         } //End Struct gSeries
 
         public struct comboK {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboK/kya",
                     "/kana/hirg/comboK/kyu",
@@ -142,11 +142,11 @@ namespace KanaPractice {
         } //End Struct comboK
 
         public struct comboG {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboG/gya",
                     "/kana/hirg/comboG/gyu",
@@ -170,11 +170,11 @@ namespace KanaPractice {
 
         #region S/Z
         public struct sSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/sSeries/sa",
                     "/kana/hirg/sSeries/shi",
@@ -202,11 +202,11 @@ namespace KanaPractice {
         } //end Struct sSeries
 
         public struct zSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/zSeries/za",
                     "/kana/hirg/zSeries/ji",
@@ -235,11 +235,11 @@ namespace KanaPractice {
         } //End Struct zSeries
 
         public struct comboS {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboS/sha",
                     "/kana/hirg/comboS/shu",
@@ -261,11 +261,11 @@ namespace KanaPractice {
         } //End Struct comboS
 
         public struct comboJ {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
 
                 hirg = new string[] {
                     "/kana/hirg/comboJ/ja",
@@ -290,11 +290,11 @@ namespace KanaPractice {
 
         #region T/D
         public struct tSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/tSeries/ta",
                     "/kana/hirg/tSeries/chi",
@@ -322,11 +322,11 @@ namespace KanaPractice {
         } //End struct tSeries
 
         public struct dSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/dSeries/da",
                     "/kana/hirg/dSeries/di",
@@ -354,11 +354,11 @@ namespace KanaPractice {
         } //End Struct dSeries
 
         public struct comboCH {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboCH/cha",
                     "/kana/hirg/comboCH/chu",
@@ -380,11 +380,11 @@ namespace KanaPractice {
         } //End Struct comboCH
 
         public struct comboD {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboD/dya",
                     "/kana/hirg/comboD/dyu",
@@ -409,11 +409,11 @@ namespace KanaPractice {
 
         #region N
         public struct nSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/nSeries/na",
                     "/kana/hirg/nSeries/ni",
@@ -443,11 +443,11 @@ namespace KanaPractice {
         } 
 
         public struct comboN {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboN/nya",
                     "/kana/hirg/comboN/nyu",
@@ -467,16 +467,15 @@ namespace KanaPractice {
                 };
             } //End init
         } //End Struct
-
         #endregion
 
         #region H/B/P
         public struct hSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/hSeries/ha",
                     "/kana/hirg/hSeries/hi",
@@ -504,11 +503,11 @@ namespace KanaPractice {
         } //End Structure hSeries
 
         public struct bSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/bSeries/ba",
                     "/kana/hirg/bSeries/bi",
@@ -537,11 +536,11 @@ namespace KanaPractice {
         } //End Structure bSeries
 
         public struct pSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/pSeries/pa",
                     "/kana/hirg/pSeries/pi",
@@ -570,11 +569,11 @@ namespace KanaPractice {
         } //End Structure pSeries
 
         public struct comboH {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboH/hya",
                     "/kana/hirg/comboH/hyu",
@@ -596,11 +595,11 @@ namespace KanaPractice {
         } //End Struct
 
         public struct comboB {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboB/bya",
                     "/kana/hirg/comboB/byu",
@@ -622,11 +621,11 @@ namespace KanaPractice {
         } //End Struct
 
         public struct comboP {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboP/pya",
                     "/kana/hirg/comboP/pyu",
@@ -651,11 +650,11 @@ namespace KanaPractice {
 
         #region M
         public struct mSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/mSeries/ma",
                     "/kana/hirg/mSeries/mi",
@@ -683,11 +682,11 @@ namespace KanaPractice {
         } //End Struct
 
         public struct comboM {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboM/mya",
                     "/kana/hirg/comboM/myu",
@@ -707,16 +706,15 @@ namespace KanaPractice {
                 };
             } //End Init
         }//End Struct
-
         #endregion
 
         #region Y
         public struct ySeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/ySeries/ya",
                     "/kana/hirg/ySeries/yu",
@@ -740,11 +738,11 @@ namespace KanaPractice {
 
         #region R
         public struct rSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/rSeries/ra",
                     "/kana/hirg/rSeries/ri",
@@ -804,11 +802,11 @@ namespace KanaPractice {
 
         #region W
         public struct wSeries {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void Init() {
                 hirg = new string[] {
                     "/kana/hirg/wSeries/wa",
                     "/kana/hirg/wSeries/wo",

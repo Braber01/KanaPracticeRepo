@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KanaPractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1366" Loaded="MainWindow_Loaded">
+        Title="MainWindow" Height="768" Width="1366" Loaded="MainWindow_Loaded" Background="LightSkyBlue">
     <Grid>
         <!-- Initial Commit -->
         <Grid.RowDefinitions>
@@ -44,7 +44,7 @@
 			</ComboBox>
 		</WrapPanel>
         <WrapPanel Grid.Row="0" Grid.Column="1" x:Name="b">
-            <TextBlock FontSize="28">Kanji: Level</TextBlock>
+            <TextBlock FontSize="28">Kanji Level:</TextBlock>
             <ComboBox Name="cboKanji" FontSize="28">
                 <ComboBoxItem>Kana Practice</ComboBoxItem>
                 <ComboBoxItem>JLPT 5 (Easiest)</ComboBoxItem>
@@ -68,8 +68,8 @@
 			</ComboBox>
 		</WrapPanel>
         <WrapPanel Grid.Row="0" Grid.Column="3" x:Name="d">
-            <TextBlock FontSize="28">Points:</TextBlock>
-            <Label Name="lblPoints" FontSize="28" Content="0" />
+            <TextBlock FontSize="28" Foreground="Lime">Points:</TextBlock>
+            <Label Name="lblPoints" FontSize="28" Foreground="Lime" Content="0" />
         </WrapPanel>
         <WrapPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" x:Name="e">
             <RadioButton Name="radHiragana" Content="Hiragana" FontSize="28" />
@@ -81,7 +81,7 @@
 			<Label FontSize="28" Name="lblKana" Foreground="Black" Content="Kana" />
 		</WrapPanel>
         <WrapPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" x:Name="g">
-            <TextBox Name="txtRomanji" FontSize="28" HorizontalAlignment="Center" Width="1366" Margin="30" />
+            <TextBox Name="txtRomanji" FontSize="28" HorizontalAlignment="Center" Width="1336" Margin="30" />
         </WrapPanel>
         <WrapPanel Grid.Row="4" Grid.Column="0" x:Name="h">
 			<Button Name="btnStartGame" FontSize="28" Content="Start" Click="btnStartGame_Click" />
