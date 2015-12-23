@@ -87,13 +87,13 @@
 			<Button Name="btnStartGame" FontSize="28" Content="Start" Click="btnStartGame_Click" />
         </WrapPanel>
         <WrapPanel Grid.Row="4" Grid.Column="1" x:Name="i">
-			<Button Name="btnCheck" FontSize="28" Content="Check Answer" />
+			<Button Name="btnCheck" FontSize="28" Content="Check Answer" Click="btnCheck_Click" />
 		</WrapPanel>
         <WrapPanel Grid.Row="4" Grid.Column="2" x:Name="j">
-			<Button Name="btnNext" Content="Next Kana" FontSize="28" />
+			<Button Name="btnNext" Content="Next Kana" FontSize="28" Click="btnNext_Click" />
 		</WrapPanel>
         <WrapPanel Grid.Row="4" Grid.Column="3" x:Name="k">
-			<Button Name="btnQuit" Content="Quit" FontSize="28" />
+			<Button Name="btnQuit" Content="Quit" FontSize="28" Click="btnQuit_Click"/>
 		</WrapPanel>
     </Grid>
 </Window>

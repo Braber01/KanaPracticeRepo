@@ -29,5 +29,17 @@ namespace KanaPractice {
         public void btnStartGame_Click(object sender,EventArgs e) {
 
         }
+
+        public void btnCheck_Click(object sender,EventArgs e) {
+
+        }
+
+        public void btnNext_Click(object sender, EventArgs e) {
+            
+        }
+
+        public void btnQuit_Click(object sender,EventArgs e) {
+
+        }
     }
 }
