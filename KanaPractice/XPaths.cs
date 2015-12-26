@@ -112,60 +112,6 @@ namespace KanaPractice {
                 }; // 0-9
             } //end Init
         } //End Struct gSeries
-
-        public struct comboK {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboK/kya",
-                    "/kana/hirg/comboK/kyu",
-                    "/kana/hirg/comboK/kyo"
-                }; //0-2
-
-                kata = new string[] {
-                    "/kana/kata/comboK/kya",
-                    "/kana/kata/comboK/kyu",
-                    "/kana/kata/comboK/kyo"
-                }; //0-2
-
-                mixed = new string[] {
-                    "/kana/hirg/comboK/kya","/kana/kata/comboK/kya",
-                    "/kana/hirg/comboK/kyu","/kana/kata/comboK/kyu",
-                    "/kana/hirg/comboK/kyo","/kana/kata/comboK/kyo"
-                }; //0-5
-
-
-            } //End Init
-        } //End Struct comboK
-
-        public struct comboG {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboG/gya",
-                    "/kana/hirg/comboG/gyu",
-                    "/kana/hirg/comboG/gyo"
-                }; //0-2
-
-                kata = new string[] {
-                    "/kana/kata/comboG/gya",
-                    "/kana/kata/comboG/gyu",
-                    "/kana/kata/comboG/gyo"
-                }; //0-2
-
-                mixed = new string[] {
-                    "/kana/hirg/comboG/gya","/kana/kata/comboG/gya",
-                    "/kana/hirg/comboG/gyu","kana/kata/comboG/gyu",
-                    "/kana/hirg/comboG/gyo","/kana/kata/comboG/gyo"
-                };
-            } //End Init
-        } //End Struct comboG
         #endregion
 
         #region S/Z
@@ -233,59 +179,6 @@ namespace KanaPractice {
 
             } //End init()
         } //End Struct zSeries
-
-        public struct comboS {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboS/sha",
-                    "/kana/hirg/comboS/shu",
-                    "/kana/hirg/comboS/sho"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboS/sha",
-                    "/kana/kata/comboS/shu",
-                    "/kana/kata/comboS/sho"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboS/sha","/kana/kata/comboS/sha",
-                    "/kana/hirg/comboS/shu","/kana/kata/comboS/shu",
-                    "/kana/hirg/comboS/sho","/kana/kata/comboS/sho"
-                };
-            }//End Init
-        } //End Struct comboS
-
-        public struct comboJ {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-
-                hirg = new string[] {
-                    "/kana/hirg/comboJ/ja",
-                    "/kana/hirg/comboJ/ju",
-                    "/kana/hirg/comboJ/jo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboJ/ja",
-                    "/kana/kata/comboJ/ju",
-                    "/kana/kata/comboJ/jo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboJ/ja","/kana/kata/comboJ/ja",
-                    "/kana/hirg/comboJ/ju","/kana/kata/comboJ/ju",
-                    "/kana/hirg/comboJ/jo","/kana/kata/comboJ/jo"
-                };
-            }//End Init
-        } //End Struct comboJ
         #endregion
 
         #region T/D
@@ -353,58 +246,6 @@ namespace KanaPractice {
             } //End Init
         } //End Struct dSeries
 
-        public struct comboCH {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboCH/cha",
-                    "/kana/hirg/comboCH/chu",
-                    "/kana/hirg/comboCH/cho"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboCH/cha",
-                    "/kana/kata/comboCH/chu",
-                    "/kana/kata/comboCH/cho"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboCH/cha","/kana/kata/comboCH/cha",
-                    "/kana/hirg/comboCH/chu","/kana/kata/comboCH/chu",
-                    "/kana/hirg/comboCH/cho","/kana/kata/comboCH/cho"
-                };
-            }//End Init
-        } //End Struct comboCH
-
-        public struct comboD {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboD/dya",
-                    "/kana/hirg/comboD/dyu",
-                    "/kana/hirg/comboD/dyo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboD/dya",
-                    "/kana/kata/comboD/dyu",
-                    "/kana/kata/comboD/dyo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboD/dya","/kana/kata/comboD/dya",
-                    "/kana/hirg/comboD/dyu","/kana/kata/comboD/dyu",
-                    "/kana/hirg/comboD/dyo","/kana/kata/comboD/dyo"
-                };
-
-            }//End Init 
-        }//End Struct comboD
         #endregion
 
         #region N
@@ -441,32 +282,6 @@ namespace KanaPractice {
             }//End Init
 
         } 
-
-        public struct comboN {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboN/nya",
-                    "/kana/hirg/comboN/nyu",
-                    "/kana/hirg/comboN/nyo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboN/nya",
-                    "/kana/kata/comboN/nyu",
-                    "/kana/kata/comboN/nyo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboN/nya","/kana/kata/comboN/nya",
-                    "/kana/hirg/comboN/nyu","/kana/kata/comboN/nyu",
-                    "/kana/hirg/comboN/nyo","/kana/kata/comboN/nyo"
-                };
-            } //End init
-        } //End Struct
         #endregion
 
         #region H/B/P
@@ -567,85 +382,6 @@ namespace KanaPractice {
             }//End Init
 
         } //End Structure pSeries
-
-        public struct comboH {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboH/hya",
-                    "/kana/hirg/comboH/hyu",
-                    "/kana/hirg/comboH/hyo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboH/hya",
-                    "/kana/kata/comboH/hyu",
-                    "/kana/kata/comboH/hyo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboH/hya","/kana/kata/comboH/hya",
-                    "/kana/hirg/comboH/hyu","/kana/kata/comboH/hyu",
-                    "/kana/hirg/comboH/hyo","/kana/kata/comboH/hyo"
-                };
-            } //End INit
-        } //End Struct
-
-        public struct comboB {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboB/bya",
-                    "/kana/hirg/comboB/byu",
-                    "/kana/hirg/comboB/byo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboB/bya",
-                    "/kana/kata/comboB/byu",
-                    "/kana/kata/comboB/byo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboB/bya","/kana/kata/comboB/bya",
-                    "/kana/hirg/comboB/byu","/kana/kata/comboB/byu",
-                    "/kana/hirg/comboB/byo","/kana/kata/comboB/byo"
-                };
-            } //End Init
-        } //End Struct
-
-        public struct comboP {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboP/pya",
-                    "/kana/hirg/comboP/pyu",
-                    "/kana/hirg/comboP/pyo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboP/pya",
-                    "/kana/kata/comboP/pyu",
-                    "/kana/kata/comboP/pyo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboP/pya","/kana/kata/comboP/pya",
-                    "/kana/hirg/comboP/pyu","/kana/kata/comboP/pyu",
-                    "/kana/hirg/comboP/pyo","/kana/kata/comboP/pyo"
-                };
-
-            } //End Init
-        }//End Struct
         #endregion
 
         #region M
@@ -680,32 +416,6 @@ namespace KanaPractice {
                 };
             } //End Init
         } //End Struct
-
-        public struct comboM {
-            public static string[] hirg;
-            public static string[] kata;
-            public static string[] mixed;
-
-            public static void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboM/mya",
-                    "/kana/hirg/comboM/myu",
-                    "/kana/hirg/comboM/myo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboM/mya",
-                    "/kana/kata/comboM/myu",
-                    "/kana/kata/comboM/myo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboM/mya","/kana/kata/comboM/mya",
-                    "/kana/hirg/comboM/myu","/kana/kata/comboM/myu",
-                    "/kana/hirg/comboM/myo","/kana/kata/comboM/myo"
-                };
-            } //End Init
-        }//End Struct
         #endregion
 
         #region Y
@@ -769,35 +479,6 @@ namespace KanaPractice {
             }
 
         } //End Struct
-
-        public struct comboR {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
-
-            public void Init() {
-                hirg = new string[] {
-                    "/kana/hirg/comboR/rya",
-                    "/kana/hirg/comboR/ryu",
-                    "/kana/hirg/comboR/ryo"
-                };
-
-                kata = new string[] {
-                    "/kana/kata/comboR/rya",
-                    "/kana/kata/comboR/ryu",
-                    "/kana/kata/comboR/ryo"
-                };
-
-                mixed = new string[] {
-                    "/kana/hirg/comboR/rya","/kana/kata/comboR/rya",
-                    "/kana/hirg/comboR/ryu","/kana/kata/comboR/ryu",
-                    "/kana/hirg/comboR/ryo","/kana/kata/comboR/ryo"
-                };
-
-            }
-
-        }
-
         #endregion
 
         #region W
@@ -828,6 +509,12 @@ namespace KanaPractice {
         }//End Struct
         #endregion
 
+        #region Compound Sounds
+        //35 hirg & katakana
+        //70 mixed
 
+
+
+        #endregion
     }
 }
