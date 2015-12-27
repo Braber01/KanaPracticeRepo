@@ -510,8 +510,171 @@ namespace KanaPractice {
         #endregion
 
         #region Compound Sounds
-        //35 hirg & katakana
-        //70 mixed
+        //0-35 hirg & katakana
+        //0-71 mixed
+
+        public struct comboSounds {
+            public string[] hirg;
+            public string[] kata;
+            public string[] mixed;
+
+            public void Init() {
+                hirg = new string[] {
+                    "/kana/hirg/comboSounds/comboK/kya", //0
+                    "/kana/hirg/comboSounds/comboK/kyu", //1
+                    "/kana/hirg/comboSounds/comboK/kyo", //2
+                    "/kana/hirg/comboSounds/comboG/gya", //3
+                    "/kana/hirg/comboSounds/comboG/gyu", //4
+                    "/kana/hirg/comboSounds/comboG/gyo", //5
+                    "/kana/hirg/comboSounds/comboS/sha", //6
+                    "/kana/hirg/comboSounds/comboS/shu", //7
+                    "/kana/hirg/comboSounds/comboS/sho", //8
+                    "/kana/hirg/comboSounds/comboJ/ja", //9
+                    "/kana/hirg/comboSounds/comboJ/ju", //10
+                    "/kana/hirg/comboSounds/comboJ/jo", //11
+                    "/kana/hirg/comboSounds/comboCH/cha", //12
+                    "/kana/hirg/comboSounds/comboCH/chu", //13
+                    "/kana/hirg/comboSounds/comboCH/cho", //14
+                    "/kana/hirg/comboSounds/comboD/dya", //15
+                    "/kana/hirg/comboSounds/comboD/dyu", //16
+                    "/kana/hirg/comboSounds/comboD/dyo", //17
+                    "/kana/hirg/comboSounds/comboN/nya", //18
+                    "/kana/hirg/comboSounds/comboN/nyu", //19
+                    "/kana/hirg/comboSounds/comboN/nyo", //20
+                    "/kana/hirg/comboSounds/comboH/hya", //21
+                    "/kana/hirg/comboSounds/comboH/hyu", //22
+                    "/kana/hirg/comboSounds/comboH/hyo", //23
+                    "/kana/hirg/comboSounds/comboB/bya", //24
+                    "/kana/hirg/comboSounds/comboB/byu", //25
+                    "/kana/hirg/comboSounds/comboB/byo", //26
+                    "/kana/hirg/comboSounds/comboP/pya", //27
+                    "/kana/hirg/comboSounds/comboP/pyu", //28
+                    "/kana/hirg/comboSounds/comboP/pyo", //29
+                    "/kana/hirg/comboSounds/comboM/mya", //30
+                    "/kana/hirg/comboSounds/comboM/myu", //31
+                    "/kana/hirg/comboSounds/comboM/myo", //32
+                    "/kana/hirg/comboSounds/comboR/rya", //33
+                    "/kana/hirg/comboSounds/comboR/ryu", //34
+                    "/kana/hirg/comboSounds/comboR/ryo" //35
+                };
+
+                kata = new string[] {
+                    "/kana/kata/comboSounds/comboK/kya", //0
+                    "/kana/kata/comboSounds/comboK/kyu", //1
+                    "/kana/kata/comboSounds/comboK/kyo", //2
+                    "/kana/kata/comboSounds/comboG/gya", //3
+                    "/kana/kata/comboSounds/comboG/gyu", //4
+                    "/kana/kata/comboSounds/comboG/gyo", //5
+                    "/kana/kata/comboSounds/comboS/sha", //6
+                    "/kana/kata/comboSounds/comboS/shu", //7
+                    "/kana/kata/comboSounds/comboS/sho", //8
+                    "/kana/kata/comboSounds/comboJ/ja", //9
+                    "/kana/kata/comboSounds/comboJ/ju", //10
+                    "/kana/kata/comboSounds/comboJ/jo", //11
+                    "/kana/kata/comboSounds/comboCH/cha", //12
+                    "/kana/kata/comboSounds/comboCH/chu", //13
+                    "/kana/kata/comboSounds/comboCH/cho", //14
+                    "/kana/kata/comboSounds/comboD/dya", //15
+                    "/kana/kata/comboSounds/comboD/dyu", //16
+                    "/kana/kata/comboSounds/comboD/dyo", //17
+                    "/kana/kata/comboSounds/comboN/nya", //18
+                    "/kana/kata/comboSounds/comboN/nyu", //19
+                    "/kana/kata/comboSounds/comboN/nyo", //20
+                    "/kana/kata/comboSounds/comboH/hya", //21
+                    "/kana/kata/comboSounds/comboH/hyu", //22
+                    "/kana/kata/comboSounds/comboH/hyo", //23
+                    "/kana/kata/comboSounds/comboB/bya", //24
+                    "/kana/kata/comboSounds/comboB/byu", //25
+                    "/kana/kata/comboSounds/comboB/byo", //26
+                    "/kana/kata/comboSounds/comboP/pya", //27
+                    "/kana/kata/comboSounds/comboP/pyu", //28
+                    "/kana/kata/comboSounds/comboP/pyo", //29
+                    "/kana/kata/comboSounds/comboM/mya", //30
+                    "/kana/kata/comboSounds/comboM/myu", //31
+                    "/kana/kata/comboSounds/comboM/myo", //32
+                    "/kana/kata/comboSounds/comboR/rya", //33
+                    "/kana/kata/comboSounds/comboR/ryu", //34
+                    "/kana/kata/comboSounds/comboR/ryo" //35
+                };
+
+                mixed = new string[] {
+                    "/kana/hirg/comboSounds/comboK/kya", //0
+                    "/kana/hirg/comboSounds/comboK/kyu", //1
+                    "/kana/hirg/comboSounds/comboK/kyo", //2
+                    "/kana/hirg/comboSounds/comboG/gya", //3
+                    "/kana/hirg/comboSounds/comboG/gyu", //4
+                    "/kana/hirg/comboSounds/comboG/gyo", //5
+                    "/kana/hirg/comboSounds/comboS/sha", //6
+                    "/kana/hirg/comboSounds/comboS/shu", //7
+                    "/kana/hirg/comboSounds/comboS/sho", //8
+                    "/kana/hirg/comboSounds/comboJ/ja", //9
+                    "/kana/hirg/comboSounds/comboJ/ju", //10
+                    "/kana/hirg/comboSounds/comboJ/jo", //11
+                    "/kana/hirg/comboSounds/comboCH/cha", //12
+                    "/kana/hirg/comboSounds/comboCH/chu", //13
+                    "/kana/hirg/comboSounds/comboCH/cho", //14
+                    "/kana/hirg/comboSounds/comboD/dya", //15
+                    "/kana/hirg/comboSounds/comboD/dyu", //16
+                    "/kana/hirg/comboSounds/comboD/dyo", //17
+                    "/kana/hirg/comboSounds/comboN/nya", //18
+                    "/kana/hirg/comboSounds/comboN/nyu", //19
+                    "/kana/hirg/comboSounds/comboN/nyo", //20
+                    "/kana/hirg/comboSounds/comboH/hya", //21
+                    "/kana/hirg/comboSounds/comboH/hyu", //22
+                    "/kana/hirg/comboSounds/comboH/hyo", //23
+                    "/kana/hirg/comboSounds/comboB/bya", //24
+                    "/kana/hirg/comboSounds/comboB/byu", //25
+                    "/kana/hirg/comboSounds/comboB/byo", //26
+                    "/kana/hirg/comboSounds/comboP/pya", //27
+                    "/kana/hirg/comboSounds/comboP/pyu", //28
+                    "/kana/hirg/comboSounds/comboP/pyo", //29
+                    "/kana/hirg/comboSounds/comboM/mya", //30
+                    "/kana/hirg/comboSounds/comboM/myu", //31
+                    "/kana/hirg/comboSounds/comboM/myo", //32
+                    "/kana/hirg/comboSounds/comboR/rya", //33
+                    "/kana/hirg/comboSounds/comboR/ryu", //34
+                    "/kana/hirg/comboSounds/comboR/ryo", //35
+                    "/kana/kata/comboSounds/comboK/kya", //36
+                    "/kana/kata/comboSounds/comboK/kyu", //37
+                    "/kana/kata/comboSounds/comboK/kyo", //38
+                    "/kana/kata/comboSounds/comboG/gya", //39
+                    "/kana/kata/comboSounds/comboG/gyu", //40
+                    "/kana/kata/comboSounds/comboG/gyo", //41
+                    "/kana/kata/comboSounds/comboS/sha", //42
+                    "/kana/kata/comboSounds/comboS/shu", //43
+                    "/kana/kata/comboSounds/comboS/sho", //44
+                    "/kana/kata/comboSounds/comboJ/ja", //45
+                    "/kana/kata/comboSounds/comboJ/ju", //46
+                    "/kana/kata/comboSounds/comboJ/jo", //47
+                    "/kana/kata/comboSounds/comboCH/cha", //48
+                    "/kana/kata/comboSounds/comboCH/chu", //49
+                    "/kana/kata/comboSounds/comboCH/cho", //50
+                    "/kana/kata/comboSounds/comboD/dya", //51
+                    "/kana/kata/comboSounds/comboD/dyu", //52
+                    "/kana/kata/comboSounds/comboD/dyo", //53
+                    "/kana/kata/comboSounds/comboN/nya", //54
+                    "/kana/kata/comboSounds/comboN/nyu", //55
+                    "/kana/kata/comboSounds/comboN/nyo", //56
+                    "/kana/kata/comboSounds/comboH/hya", //57
+                    "/kana/kata/comboSounds/comboH/hyu", //58
+                    "/kana/kata/comboSounds/comboH/hyo", //59
+                    "/kana/kata/comboSounds/comboB/bya", //60
+                    "/kana/kata/comboSounds/comboB/byu", //61
+                    "/kana/kata/comboSounds/comboB/byo", //62
+                    "/kana/kata/comboSounds/comboP/pya", //63
+                    "/kana/kata/comboSounds/comboP/pyu", //64
+                    "/kana/kata/comboSounds/comboP/pyo", //65
+                    "/kana/kata/comboSounds/comboM/mya", //66
+                    "/kana/kata/comboSounds/comboM/myu", //67
+                    "/kana/kata/comboSounds/comboM/myo", //68
+                    "/kana/kata/comboSounds/comboR/rya", //69
+                    "/kana/kata/comboSounds/comboR/ryu", //70
+                    "/kana/kata/comboSounds/comboR/ryo" //71
+
+                };
+            }
+
+        }
 
 
 
