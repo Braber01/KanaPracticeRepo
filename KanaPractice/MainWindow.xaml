@@ -25,7 +25,7 @@
             <TextBlock FontSize="28">Kana To Practice</TextBlock>
             <ComboBox Name="cboKana" FontSize="28" HorizontalAlignment="Center">
                 <ComboBoxItem>Kanji Practice</ComboBoxItem>
-                <ComboBoxItem>a-i-u-e-o</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">a-i-u-e-o</ComboBoxItem>
                 <ComboBoxItem>ka-ki-ku-ke-ko</ComboBoxItem>
                 <ComboBoxItem>ga-gi-gu-ge-go</ComboBoxItem>
                 <ComboBoxItem>sa-shi-su-se-so</ComboBoxItem>
@@ -46,7 +46,7 @@
         <WrapPanel Grid.Row="0" Grid.Column="1" x:Name="b">
             <TextBlock FontSize="28">Kanji Level:</TextBlock>
             <ComboBox Name="cboKanji" FontSize="28">
-                <ComboBoxItem>Kana Practice</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">Kana Practice</ComboBoxItem>
                 <ComboBoxItem>JLPT 5 (Easiest)</ComboBoxItem>
                 <ComboBoxItem>JLPT 4</ComboBoxItem>
                 <ComboBoxItem>JLPT 3</ComboBoxItem>
@@ -57,7 +57,7 @@
         <WrapPanel Grid.Row="0" Grid.Column="2" x:Name="c">
             <TextBlock FontSize="28">Points to play to:</TextBlock>
             <ComboBox Name="cboPointsToEnd" FontSize="28">
-                <ComboBoxItem>5</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">5</ComboBoxItem>
                 <ComboBoxItem>6</ComboBoxItem>
                 <ComboBoxItem>7</ComboBoxItem>
                 <ComboBoxItem>8</ComboBoxItem>
@@ -73,7 +73,7 @@
         </WrapPanel>
         <WrapPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" x:Name="e">
             <RadioButton Name="radHiragana" Content="Hiragana" FontSize="28" />
-            <RadioButton Name="radKatakana" Content="Katakana" FontSize="28" />
+            <RadioButton Name="radKatakana" Content="Katakana" FontSize="28" IsChecked="True" />
             <RadioButton Name="radMixed" Content="Mixed Kana" FontSize="28" />
         </WrapPanel>
         <WrapPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" x:Name="f">
