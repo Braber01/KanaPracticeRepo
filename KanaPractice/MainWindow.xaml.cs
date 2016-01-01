@@ -1326,7 +1326,8 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if(radMixed.IsChecked == true) {
+                    }
+                    else if (radMixed.IsChecked == true) {
                         strExpression = "//pSeries/*";
                         result = randomKana.Next(0, 9);
                         switch (result) {
@@ -1400,7 +1401,8 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if(radKatakana.IsChecked == true) {
+                    }
+                    else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/mSeries/*";
                         result = randomKana.Next(0, 4);
                         switch (result) {
@@ -1427,7 +1429,8 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if(radMixed.IsChecked == true) {
+                    }
+                    else if (radMixed.IsChecked == true) {
                         strExpression = "//mSeries/*";
                         result = randomKana.Next(0, 9);
                         switch (result) {
@@ -1471,8 +1474,84 @@ namespace KanaPractice {
                         } //end While
                     }//End If
                     break; //mSeries,12
-
-            }
+                case 13:
+                    XPaths.ySeries.Init();
+                    if (radHiragana.IsChecked == true) {
+                        strExpression = "/kana/hirg/ySeries/*";
+                        result = randomKana.Next(0, 2);
+                        switch (result) {
+                            case 0:
+                                strExpression = XPaths.ySeries.hirg[0];
+                                break;
+                            case 1:
+                                strExpression = XPaths.ySeries.hirg[1];
+                                break;
+                            case 2:
+                                strExpression = XPaths.ySeries.hirg[2];
+                                break;
+                        }//end Switch result
+                        nav.Evaluate(strExpression);
+                        nodeIter = nav.Select(strExpression);
+                        while (nodeIter.MoveNext()) {
+                            string kana = nodeIter.Current.GetAttribute("kana",
+                                "");
+                            lblKana.Content = kana;
+                        } //end While
+                    }
+                    else if (radKatakana.IsChecked == true) {
+                        strExpression = "/kana/kata/ySeries/*";
+                        result = randomKana.Next(0, 2);
+                        switch (result) {
+                            case 0:
+                                strExpression = XPaths.ySeries.kata[0];
+                                break;
+                            case 1:
+                                strExpression = XPaths.ySeries.kata[1];
+                                break;
+                            case 2:
+                                strExpression = XPaths.ySeries.kata[2];
+                                break;
+                        }
+                        nav.Evaluate(strExpression);
+                        nodeIter = nav.Select(strExpression);
+                        while (nodeIter.MoveNext()) {
+                            string kana = nodeIter.Current.GetAttribute("kana",
+                                "");
+                            lblKana.Content = kana;
+                        } //end While
+                    }
+                    else if (radMixed.IsChecked == true) {
+                        strExpression = "//ySeries/*";
+                        result = randomKana.Next(0, 5);
+                        switch (result) {
+                            case 0:
+                                strExpression = XPaths.ySeries.mixed[0];
+                                break;
+                            case 1:
+                                strExpression = XPaths.ySeries.mixed[1];
+                                break;
+                            case 2:
+                                strExpression = XPaths.ySeries.mixed[2];
+                                break;
+                            case 3:
+                                strExpression = XPaths.ySeries.mixed[3];
+                                break;
+                            case 4:
+                                strExpression = XPaths.ySeries.mixed[4];
+                                break;
+                            case 5:
+                                strExpression = XPaths.ySeries.mixed[5];
+                                break;
+                        }//end Switch result
+                        nav.Evaluate(strExpression);
+                        nodeIter = nav.Select(strExpression);
+                        while (nodeIter.MoveNext()) {
+                            string kana = nodeIter.Current.GetAttribute("kana",
+                                "");
+                            lblKana.Content = kana;
+                        } //end While
+                    }
+                    break;//ySeries,13
 
             } //End Switch (ComboBox)
         } //end btnStartGame_Click
