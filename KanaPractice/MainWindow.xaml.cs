@@ -1653,8 +1653,86 @@ namespace KanaPractice {
                         } //end While
                     }
                     break;//rSeries,14
-
-
+                case 15:
+                    XPaths.wSeries.Init();
+                    if(radHiragana.IsChecked == true) {
+                        strExpression = "/kana/hirg/wSeries/*";
+                        result = randomKana.Next(0, 2);
+                        switch (result) {
+                            case 0:
+                                strExpression = XPaths.wSeries.hirg[0];
+                                break;
+                            case 1:
+                                strExpression = XPaths.wSeries.hirg[1];
+                                break;
+                            case 2:
+                                strExpression = XPaths.wSeries.hirg[2];
+                                break;
+                        }//end switch result
+                        nav.Evaluate(strExpression);
+                        nodeIter = nav.Select(strExpression);
+                        while (nodeIter.MoveNext()) {
+                            string kana = nodeIter.Current.GetAttribute("kana",
+                                "");
+                            lblKana.Content = kana;
+                        } //end While
+                    }else if (radKatakana.IsChecked == true) {
+                        strExpression = "/kana/kata/wSeries/*";
+                        result = randomKana.Next(0, 2);
+                        switch (result) {
+                            case 0:
+                                strExpression = XPaths.wSeries.kata[0];
+                                break;
+                            case 1:
+                                strExpression = XPaths.wSeries.kata[1];
+                                break;
+                            case 2:
+                                strExpression = XPaths.wSeries.kata[2];
+                                break;
+                        }//end switch result
+                        nav.Evaluate(strExpression);
+                        nodeIter = nav.Select(strExpression);
+                        while (nodeIter.MoveNext()) {
+                            string kana = nodeIter.Current.GetAttribute("kana",
+                                "");
+                            lblKana.Content = kana;
+                        } //end While
+                    }else if (radMixed.IsChecked == true) {
+                        strExpression = "//wSeries/*";
+                        result = randomKana.Next(0, 5);
+                        switch (result) {
+                            case 0:
+                                strExpression = XPaths.wSeries.mixed[0];
+                                break;
+                            case 1:
+                                strExpression = XPaths.wSeries.mixed[1];
+                                break;
+                            case 2:
+                                strExpression = XPaths.wSeries.mixed[2];
+                                break;
+                            case 3:
+                                strExpression = XPaths.wSeries.mixed[3];
+                                break;
+                            case 4:
+                                strExpression = XPaths.wSeries.mixed[4];
+                                break;
+                            case 5:
+                                strExpression = XPaths.wSeries.mixed[5];
+                                break;
+                        }//end switch result;
+                        nav.Evaluate(strExpression);
+                        nodeIter = nav.Select(strExpression);
+                        while (nodeIter.MoveNext()) {
+                            string kana = nodeIter.Current.GetAttribute("kana",
+                                "");
+                            lblKana.Content = kana;
+                        } //end While
+                    }
+                    break;//wSeries,15
+                case 16:
+                    //XPaths.comboSounds.Init();
+                    //TODO add implementation for Compound sounds later
+                    break;
             } //End Switch (ComboBox)
         } //end btnStartGame_Click
 
