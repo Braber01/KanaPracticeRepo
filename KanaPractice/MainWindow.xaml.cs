@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.XPath;
 
+#pragma warning disable CC0001
+
 namespace KanaPractice {
 
     /// <summary>
@@ -1267,6 +1269,20 @@ namespace KanaPractice {
                         }//end While
                     } //end if
                     break; //bSeries,10
+                case 11: //pSeries
+                    XPaths.pSeries.Init();
+
+
+
+
+
+
+
+
+
+
+                    break;
+
             } //End Switch (ComboBox)
         } //end btnStartGame_Click
 

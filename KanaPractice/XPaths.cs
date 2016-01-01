@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace KanaPractice {
 
     /// <summary>
-    /// A Class to hold Strings 
-    /// of Each XPath Element 
-    /// Based on what Kana the user 
+    /// A Class to hold Strings
+    /// of Each XPath Element
+    /// Based on what Kana the user
     /// wants to practice.
     /// </summary>
     public static class XPaths {
@@ -281,7 +281,7 @@ namespace KanaPractice {
 
             }//End Init
 
-        } 
+        }
         #endregion
 
         #region H/B/P
@@ -514,11 +514,11 @@ namespace KanaPractice {
         //0-71 mixed
 
         public struct comboSounds {
-            public string[] hirg;
-            public string[] kata;
-            public string[] mixed;
+            public static string[] hirg;
+            public static string[] kata;
+            public static string[] mixed;
 
-            public void Init() {
+            public static void  Init() {
                 hirg = new string[] {
                     "/kana/hirg/comboSounds/comboK/kya", //0
                     "/kana/hirg/comboSounds/comboK/kyu", //1
