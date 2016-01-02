@@ -34,6 +34,29 @@ namespace KanaPractice {
         }
 
         /// <summary>
+        /// Refactor of repeated code:
+        /// <code>
+        /// nav.Evaluate(strExpression);
+        ///nodeIter = nav.Select(strExpression);
+        ///while (nodeIter.MoveNext()) {
+        ///string kana = nodeIter.Current.GetAttribute("kana","");
+        ///lblKana.Content = kana;
+        ///} //end While
+        /// </code>
+        /// </summary>
+        /// <param name="navagiator">nav</param>
+        /// <param name="xPath">strExpression</param>
+        private void GetKana(XPathNavigator navagiator, string xPath) {
+            XPathNodeIterator iter;
+            navagiator.Evaluate(xPath);
+            iter = navagiator.Select(xPath);
+            while (iter.MoveNext()) {
+                string kana = iter.Current.GetAttribute("kana", "");
+                lblKana.Content = kana;
+            } //end While
+        }
+
+        /// <summary>
         /// <para>
         /// Starts Game, gets random Kana
         /// From Data.xml</para>
@@ -90,13 +113,6 @@ namespace KanaPractice {
                                 strExpression = XPaths.aiueo.hirg[4];
                                 break;
                         } //End Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/aiueo/*";
@@ -122,13 +138,8 @@ namespace KanaPractice {
                                 strExpression = XPaths.aiueo.kata[4];
                                 break;
                         }//End Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End While
+
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//aiueo/*"; //Selects All aiueo elements no matter where they are.
@@ -1278,15 +1289,19 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.pSeries.hirg[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.pSeries.hirg[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.pSeries.hirg[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.pSeries.hirg[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.pSeries.hirg[4];
                                 break;
@@ -1306,15 +1321,19 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.pSeries.kata[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.pSeries.kata[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.pSeries.kata[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.pSeries.kata[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.pSeries.kata[4];
                                 break;
@@ -1334,30 +1353,39 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.pSeries.mixed[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.pSeries.mixed[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.pSeries.mixed[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.pSeries.mixed[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.pSeries.mixed[4];
                                 break;
+
                             case 5:
                                 strExpression = XPaths.pSeries.mixed[5];
                                 break;
+
                             case 6:
                                 strExpression = XPaths.pSeries.mixed[6];
                                 break;
+
                             case 7:
                                 strExpression = XPaths.pSeries.mixed[7];
                                 break;
+
                             case 8:
                                 strExpression = XPaths.pSeries.mixed[8];
                                 break;
+
                             case 9:
                                 strExpression = XPaths.pSeries.mixed[9];
                                 break;
@@ -1381,15 +1409,19 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.mSeries.hirg[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.mSeries.hirg[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.mSeries.hirg[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.mSeries.hirg[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.mSeries.hirg[4];
                                 break;
@@ -1409,15 +1441,19 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.mSeries.kata[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.mSeries.kata[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.mSeries.kata[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.mSeries.kata[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.mSeries.kata[4];
                                 break;
@@ -1437,30 +1473,39 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.mSeries.mixed[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.mSeries.mixed[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.mSeries.mixed[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.mSeries.mixed[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.mSeries.mixed[4];
                                 break;
+
                             case 5:
                                 strExpression = XPaths.mSeries.mixed[5];
                                 break;
+
                             case 6:
                                 strExpression = XPaths.mSeries.mixed[6];
                                 break;
+
                             case 7:
                                 strExpression = XPaths.mSeries.mixed[7];
                                 break;
+
                             case 8:
                                 strExpression = XPaths.mSeries.mixed[8];
                                 break;
+
                             case 9:
                                 strExpression = XPaths.mSeries.mixed[9];
                                 break;
@@ -1483,9 +1528,11 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.ySeries.hirg[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.ySeries.hirg[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.ySeries.hirg[2];
                                 break;
@@ -1505,9 +1552,11 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.ySeries.kata[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.ySeries.kata[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.ySeries.kata[2];
                                 break;
@@ -1527,18 +1576,23 @@ namespace KanaPractice {
                             case 0:
                                 strExpression = XPaths.ySeries.mixed[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.ySeries.mixed[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.ySeries.mixed[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.ySeries.mixed[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.ySeries.mixed[4];
                                 break;
+
                             case 5:
                                 strExpression = XPaths.ySeries.mixed[5];
                                 break;
@@ -1555,22 +1609,26 @@ namespace KanaPractice {
                 case 14:
                     //r Sounds
                     XPaths.rSeries.Init();
-                    if(radHiragana.IsChecked == true) {
+                    if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/rSeries/*";
                         result = randomKana.Next(0, 4);
                         switch (result) {
                             case 0:
                                 strExpression = XPaths.rSeries.hirg[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.rSeries.hirg[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.rSeries.hirg[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.rSeries.hirg[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.rSeries.hirg[4];
                                 break;
@@ -1582,22 +1640,27 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if(radKatakana.IsChecked == true) {
+                    }
+                    else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/rSeries/*";
                         result = randomKana.Next(0, 4);
                         switch (result) {
                             case 0:
                                 strExpression = XPaths.rSeries.kata[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.rSeries.kata[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.rSeries.kata[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.rSeries.kata[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.rSeries.kata[4];
                                 break;
@@ -1609,37 +1672,47 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if(radMixed.IsChecked == true) {
+                    }
+                    else if (radMixed.IsChecked == true) {
                         strExpression = "//rSeries/*";
                         result = randomKana.Next(0, 9);
                         switch (result) {
                             case 0:
                                 strExpression = XPaths.rSeries.mixed[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.rSeries.mixed[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.rSeries.mixed[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.rSeries.mixed[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.rSeries.mixed[4];
                                 break;
+
                             case 5:
                                 strExpression = XPaths.rSeries.mixed[5];
                                 break;
+
                             case 6:
                                 strExpression = XPaths.rSeries.mixed[6];
                                 break;
+
                             case 7:
                                 strExpression = XPaths.rSeries.mixed[7];
                                 break;
+
                             case 8:
                                 strExpression = XPaths.rSeries.mixed[8];
                                 break;
+
                             case 9:
                                 strExpression = XPaths.rSeries.mixed[9];
                                 break;
@@ -1655,16 +1728,18 @@ namespace KanaPractice {
                     break;//rSeries,14
                 case 15:
                     XPaths.wSeries.Init();
-                    if(radHiragana.IsChecked == true) {
+                    if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/wSeries/*";
                         result = randomKana.Next(0, 2);
                         switch (result) {
                             case 0:
                                 strExpression = XPaths.wSeries.hirg[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.wSeries.hirg[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.wSeries.hirg[2];
                                 break;
@@ -1676,16 +1751,19 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if (radKatakana.IsChecked == true) {
+                    }
+                    else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/wSeries/*";
                         result = randomKana.Next(0, 2);
                         switch (result) {
                             case 0:
                                 strExpression = XPaths.wSeries.kata[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.wSeries.kata[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.wSeries.kata[2];
                                 break;
@@ -1697,25 +1775,31 @@ namespace KanaPractice {
                                 "");
                             lblKana.Content = kana;
                         } //end While
-                    }else if (radMixed.IsChecked == true) {
+                    }
+                    else if (radMixed.IsChecked == true) {
                         strExpression = "//wSeries/*";
                         result = randomKana.Next(0, 5);
                         switch (result) {
                             case 0:
                                 strExpression = XPaths.wSeries.mixed[0];
                                 break;
+
                             case 1:
                                 strExpression = XPaths.wSeries.mixed[1];
                                 break;
+
                             case 2:
                                 strExpression = XPaths.wSeries.mixed[2];
                                 break;
+
                             case 3:
                                 strExpression = XPaths.wSeries.mixed[3];
                                 break;
+
                             case 4:
                                 strExpression = XPaths.wSeries.mixed[4];
                                 break;
+
                             case 5:
                                 strExpression = XPaths.wSeries.mixed[5];
                                 break;

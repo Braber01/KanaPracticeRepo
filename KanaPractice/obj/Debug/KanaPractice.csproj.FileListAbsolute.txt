@@ -26,5 +26,3 @@ C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\obj\Debug\
 C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\obj\Debug\KanaPractice.g.resources
 C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\obj\Debug\KanaPractice.Properties.Resources.resources
 C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\obj\Debug\KanaPractice.csproj.GenerateResource.Cache
-C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\bin\Debug\KanaPractice.exe.CodeAnalysisLog.xml
-C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\bin\Debug\KanaPractice.exe.lastcodeanalysissucceeded
