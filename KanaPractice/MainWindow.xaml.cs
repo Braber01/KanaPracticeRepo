@@ -185,13 +185,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.aiueo.mixed[9];
                                 break;
                         }//end Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End While
+                        GetKana(nav, strExpression);
                     }
                     break; //Vowels,1
                 case 2: //kSeries
@@ -221,13 +215,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.kSeries.hirg[4];
                                 break;
                         } //End switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/kSeries/*";
@@ -254,13 +242,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.kSeries.kata[4];
                                 break;
                         } //end Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//kSeries/*";
@@ -307,13 +289,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.kSeries.mixed[9];
                                 break;
                         }//End Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("value",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     } //end if
                     break; //Case kSeries
                 case 3: //gSeries,2
@@ -376,14 +352,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.gSeries.kata[4];
                                 break;
                         } //End Switch
-
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//gSeries/*";
@@ -429,13 +398,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.gSeries.mixed[9];
                                 break;
                         }//End Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     } //end if
                     break; //gSeries,3
                 case 4: //sSeries
@@ -466,13 +429,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.sSeries.hirg[4];
                                 break;
                         }//End switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/sSeries/*";
@@ -499,13 +456,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.sSeries.kata[4];
                                 break;
                         } //End Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana", "");
-                            lblKana.Content = kana;
-                        } //End While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//sSeries/*";
@@ -551,13 +502,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.sSeries.mixed[9];
                                 break;
                         }//end Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }
+                        GetKana(nav, strExpression);
                     }
                     break; //sSeries,4
                 case 5: //zSeries
@@ -586,13 +531,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.zSeries.hirg[4];
                                 break;
                         }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         //zSeries
@@ -618,14 +557,8 @@ namespace KanaPractice {
                             case 4:
                                 strExpression = XPaths.zSeries.kata[4];
                                 break;
-                        }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End while
+                        }//end switch result
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//zSeries/*";
@@ -670,14 +603,8 @@ namespace KanaPractice {
                             case 9:
                                 strExpression = XPaths.zSeries.mixed[9];
                                 break;
-                        } //end Switch
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End while
+                        } //end Switch result
+                        GetKana(nav, strExpression);
                     }
                     break;//zSeries,5
                 case 6: //tSeries
@@ -706,13 +633,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.tSeries.hirg[4];
                                 break;
                         } //End Switch Result
-
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana", "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/tSeries/*";
@@ -738,13 +659,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.tSeries.kata[4];
                                 break;
                         } //End Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End while
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//tSeries/*";
@@ -791,13 +706,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.tSeries.mixed[9];
                                 break;
                         } //end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //End while
+                        GetKana(nav, strExpression);
                     } //End If
                     break; //tSeries,6
                 case 7: //dSeries
@@ -825,14 +734,8 @@ namespace KanaPractice {
                             case 4:
                                 strExpression = XPaths.dSeries.hirg[4];
                                 break;
-                        }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        }//end Switch result
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/dSeries/*";
@@ -858,13 +761,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.dSeries.kata[4];
                                 break;
                         }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//dSeries/*";
@@ -910,13 +807,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.dSeries.mixed[9];
                                 break;
                         } //end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     } //end if
                     break;//dSeries,7
                 case 8:
@@ -945,13 +836,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.nSeries.hirg[4];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/nSeries/*";
@@ -977,13 +862,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.nSeries.kata[4];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//nSeries/*";
@@ -1028,14 +907,8 @@ namespace KanaPractice {
                             case 9:
                                 strExpression = XPaths.nSeries.mixed[9];
                                 break;
-                        }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        }//End Switch result
+                        GetKana(nav, strExpression);
                     }
                     break;//nSeries,8
                 case 9: //hSeries,9
@@ -1064,13 +937,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.hSeries.hirg[4];
                                 break;
                         } //end Switch Result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/hSeries/*";
@@ -1095,14 +962,8 @@ namespace KanaPractice {
                             case 4:
                                 strExpression = XPaths.hSeries.kata[4];
                                 break;
-                        }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        }//end Switch result
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//hSeries/*";
@@ -1148,13 +1009,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.hSeries.mixed[9];
                                 break;
                         } //end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     } //end if
                     break; //hSeries,9
                 case 10: //bSeries
@@ -1185,13 +1040,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.bSeries.hirg[4];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/bSeries/*";
@@ -1218,13 +1067,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.bSeries.kata[4];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//bSeries/*";
@@ -1271,13 +1114,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.bSeries.mixed[9];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        }//end While
+                        GetKana(nav, strExpression);
                     } //end if
                     break; //bSeries,10
                 case 11: //pSeries
@@ -1306,13 +1143,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.pSeries.hirg[4];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/pSeries/*";
@@ -1338,13 +1169,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.pSeries.kata[4];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//pSeries/*";
@@ -1390,13 +1215,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.pSeries.mixed[9];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     break; //pSeries,11
                 case 12:
@@ -1426,13 +1245,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.mSeries.hirg[4];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/mSeries/*";
@@ -1458,13 +1271,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.mSeries.kata[4];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//mSeries/*";
@@ -1510,13 +1317,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.mSeries.mixed[9];
                                 break;
                         }//end Switch Result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }//End If
                     break; //mSeries,12
                 case 13:
@@ -1537,13 +1338,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.ySeries.hirg[2];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/ySeries/*";
@@ -1561,13 +1356,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.ySeries.kata[2];
                                 break;
                         }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//ySeries/*";
@@ -1597,13 +1386,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.ySeries.mixed[5];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     break;//ySeries,13
                 case 14:
@@ -1633,13 +1416,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.rSeries.hirg[4];
                                 break;
                         }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/rSeries/*";
@@ -1665,13 +1442,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.rSeries.kata[4];
                                 break;
                         }//end Switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//rSeries/*";
@@ -1717,13 +1488,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.rSeries.mixed[9];
                                 break;
                         }
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     break;//rSeries,14
                 case 15:
@@ -1744,13 +1509,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.wSeries.hirg[2];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/wSeries/*";
@@ -1768,13 +1527,7 @@ namespace KanaPractice {
                                 strExpression = XPaths.wSeries.kata[2];
                                 break;
                         }//end switch result
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//wSeries/*";
@@ -1803,14 +1556,8 @@ namespace KanaPractice {
                             case 5:
                                 strExpression = XPaths.wSeries.mixed[5];
                                 break;
-                        }//end switch result;
-                        nav.Evaluate(strExpression);
-                        nodeIter = nav.Select(strExpression);
-                        while (nodeIter.MoveNext()) {
-                            string kana = nodeIter.Current.GetAttribute("kana",
-                                "");
-                            lblKana.Content = kana;
-                        } //end While
+                        }//end switch result
+                        GetKana(nav, strExpression);
                     }
                     break;//wSeries,15
                 case 16:
