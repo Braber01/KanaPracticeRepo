@@ -73,12 +73,13 @@ namespace KanaPractice {
             //C:/Users/Bens%20Computer/Documents/GitHub/KanaPracticeRepo/KanaPractice/Data.xml
             XPathNavigator nav; //Provides a cursor model for Navigating and editing XML Data
             XPathDocument docNav; //Provides a fast, read-only in-memory resperntation of an xml document by using the xpath data model
-            XPathNodeIterator nodeIter; //Provides an iterator over a selected set of nodes
             string strExpression;
 
             docNav = new XPathDocument(@"C:\Users\Bens Computer\Documents\GitHub\KanaPracticeRepo\KanaPractice\Data.xml");
             nav = docNav.CreateNavigator();
+
             Random randomKana = new Random();
+
             int result;
 
             //0-16
@@ -91,308 +92,53 @@ namespace KanaPractice {
                     XPaths.aiueo.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/aiueo/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.aiueo.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.aiueo.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.aiueo.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.aiueo.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.aiueo.hirg[4];
-                                break;
-                        } //End Switch
+                        strExpression = XPaths.aiueo.hirg[randomKana.Next(XPaths.aiueo.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/aiueo/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.aiueo.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.aiueo.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.aiueo.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.aiueo.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.aiueo.kata[4];
-                                break;
-                        }//End Switch
-
+                        strExpression = XPaths.aiueo.kata[randomKana.Next(XPaths.aiueo.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//aiueo/*"; //Selects All aiueo elements no matter where they are.
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.aiueo.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.aiueo.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.aiueo.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.aiueo.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.aiueo.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.aiueo.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.aiueo.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.aiueo.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.aiueo.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.aiueo.mixed[9];
-                                break;
-                        }//end Switch
+                        strExpression = XPaths.aiueo.mixed[randomKana.Next(XPaths.aiueo.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break; //Vowels,1
                 case 2: //kSeries
                     XPaths.kSeries.Init();
                     if (radHiragana.IsChecked == true) {
-                        result = randomKana.Next(0, 5);
                         strExpression = "/kana/hirg/kSeries/*";
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.kSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.kSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.kSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.kSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.kSeries.hirg[4];
-                                break;
-                        } //End switch
+                        strExpression = XPaths.kSeries.hirg[randomKana.Next(XPaths.kSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/kSeries/*";
-                        result = randomKana.Next(0, 5);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.kSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.kSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.kSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.kSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.kSeries.kata[4];
-                                break;
-                        } //end Switch
+                        strExpression = XPaths.kSeries.kata[randomKana.Next(XPaths.kSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//kSeries/*";
-                        result = randomKana.Next(0, 10);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.kSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.kSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.kSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.kSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.kSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.kSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.kSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.kSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.kSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.kSeries.mixed[9];
-                                break;
-                        }//End Switch
+                        strExpression = XPaths.kSeries.mixed[randomKana.Next(XPaths.kSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     } //end if
                     break; //Case kSeries
                 case 3: //gSeries,2
                     XPaths.gSeries.Init();
                     if (radHiragana.IsChecked == true) {
-                        result = randomKana.Next(0, 5);
                         strExpression = "/kana/hirg/gSeries/*";
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.gSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.gSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.gSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.gSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.gSeries.hirg[4];
-                                break;
-                        }//End switch
+                        strExpression = XPaths.gSeries.hirg[randomKana.Next(XPaths.gSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/kSeries/*";
-                        result = randomKana.Next(0, 5);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.gSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.gSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.gSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.gSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.gSeries.kata[4];
-                                break;
-                        } //End Switch
+                        strExpression = XPaths.gSeries.kata[randomKana.Next(XPaths.gSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//gSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.gSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.gSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.gSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.gSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.gSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.gSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.gSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.gSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.gSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.gSeries.mixed[9];
-                                break;
-                        }//End Switch
+                        strExpression = XPaths.gSeries.mixed[randomKana.Next(XPaths.gSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     } //end if
                     break; //gSeries,3
@@ -401,102 +147,17 @@ namespace KanaPractice {
 
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/sSeries/*";
-                        result = randomKana.Next(0, 5);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.sSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.sSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.sSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.sSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.sSeries.hirg[4];
-                                break;
-                        }//End switch
+                        strExpression = XPaths.sSeries.hirg[randomKana.Next(XPaths.sSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/sSeries/*";
-                        result = randomKana.Next(0, 5);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.sSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.sSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.sSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.sSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.sSeries.kata[4];
-                                break;
-                        } //End Switch
+                        strExpression = XPaths.sSeries.kata[randomKana.Next(XPaths.sSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//sSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.sSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.sSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.sSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.sSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.sSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.sSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.sSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.sSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.sSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.sSeries.mixed[9];
-                                break;
-                        }//end Switch
+                        strExpression = XPaths.sSeries.mixed[randomKana.Next(XPaths.sSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break; //sSeries,4
@@ -504,101 +165,18 @@ namespace KanaPractice {
                     XPaths.zSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/zSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.zSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.zSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.zSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.zSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.zSeries.hirg[4];
-                                break;
-                        }
+                        strExpression = XPaths.zSeries.hirg[randomKana.Next(XPaths.zSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         //zSeries
                         strExpression = "/kana/kata/zSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.zSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.zSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.zSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.zSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.zSeries.kata[4];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.zSeries.kata[randomKana.Next(XPaths.zSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//zSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.zSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.zSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.zSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.zSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.zSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.zSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.zSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.zSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.zSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.zSeries.mixed[9];
-                                break;
-                        } //end Switch result
+                        strExpression = XPaths.zSeries.mixed[randomKana.Next(XPaths.zSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break;//zSeries,5
@@ -606,101 +184,17 @@ namespace KanaPractice {
                     XPaths.tSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/tSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.tSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.tSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.tSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.tSeries.hirg[4];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.tSeries.hirg[4];
-                                break;
-                        } //End Switch Result
+                        strExpression = XPaths.tSeries.hirg[randomKana.Next(XPaths.tSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/tSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.tSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.tSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.tSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.tSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.tSeries.kata[4];
-                                break;
-                        } //End Switch result
+                        strExpression = XPaths.tSeries.kata[randomKana.Next(XPaths.tSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//tSeries/*";
-                        result = randomKana.Next(0, 10);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.tSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.tSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.tSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.tSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.tSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.tSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.tSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.tSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.tSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.tSeries.mixed[9];
-                                break;
-                        } //end Switch result
+                        strExpression = XPaths.tSeries.mixed[randomKana.Next(XPaths.tSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     } //End If
                     break; //tSeries,6
@@ -708,100 +202,17 @@ namespace KanaPractice {
                     XPaths.dSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/dSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.dSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.dSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.dSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.dSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.dSeries.hirg[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.dSeries.hirg[randomKana.Next(XPaths.dSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/dSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.dSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.dSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.dSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.dSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.dSeries.kata[4];
-                                break;
-                        }
+                        strExpression = XPaths.dSeries.kata[randomKana.Next(XPaths.dSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//dSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.dSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.dSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.dSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.dSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.dSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.dSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.dSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.dSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.dSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.dSeries.mixed[9];
-                                break;
-                        } //end Switch result
+                        strExpression = XPaths.dSeries.mixed[randomKana.Next(XPaths.dSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     } //end if
                     break;//dSeries,7
@@ -809,100 +220,17 @@ namespace KanaPractice {
                     XPaths.nSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/nSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.nSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.nSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.nSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.nSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.nSeries.hirg[4];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.nSeries.hirg[randomKana.Next(XPaths.nSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/nSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.nSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.nSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.nSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.nSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.nSeries.kata[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.nSeries.kata[randomKana.Next(XPaths.nSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//nSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.nSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.nSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.nSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.nSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.nSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.nSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.nSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.nSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.nSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.nSeries.mixed[9];
-                                break;
-                        }//End Switch result
+                        strExpression = XPaths.nSeries.mixed[randomKana.Next(XPaths.nSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break;//nSeries,8
@@ -910,100 +238,17 @@ namespace KanaPractice {
                     XPaths.hSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/hSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.hSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.hSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.hSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.hSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.hSeries.hirg[4];
-                                break;
-                        } //end Switch Result
+                        strExpression = XPaths.hSeries.hirg[randomKana.Next(XPaths.hSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/hSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.hSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.hSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.hSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.hSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.hSeries.kata[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.hSeries.kata[randomKana.Next(XPaths.hSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//hSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.hSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.hSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.hSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.hSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.hSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.hSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.hSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.hSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.hSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.hSeries.mixed[9];
-                                break;
-                        } //end Switch result
+                        strExpression = XPaths.hSeries.mixed[randomKana.Next(XPaths.hSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     } //end if
                     break; //hSeries,9
@@ -1012,103 +257,17 @@ namespace KanaPractice {
 
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/bSeries/*";
-                        result = randomKana.Next(0, 5);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.bSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.bSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.bSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.bSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.bSeries.hirg[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.bSeries.hirg[randomKana.Next(XPaths.bSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/bSeries/*";
-                        result = randomKana.Next(0, 5);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.bSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.bSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.bSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.bSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.bSeries.kata[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.bSeries.kata[randomKana.Next(XPaths.bSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//bSeries/*";
-                        result = randomKana.Next(0, 10);
-
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.bSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.bSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.bSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.bSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.bSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.bSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.bSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.bSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.bSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.bSeries.mixed[9];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.bSeries.mixed[randomKana.Next(XPaths.bSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     } //end if
                     break; //bSeries,10
@@ -1116,100 +275,17 @@ namespace KanaPractice {
                     XPaths.pSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/pSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.pSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.pSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.pSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.pSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.pSeries.hirg[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.pSeries.hirg[randomKana.Next(XPaths.pSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/pSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.pSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.pSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.pSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.pSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.pSeries.kata[4];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.pSeries.kata[randomKana.Next(XPaths.pSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//pSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.pSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.pSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.pSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.pSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.pSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.pSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.pSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.pSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.pSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.pSeries.mixed[9];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.pSeries.mixed[randomKana.Next(XPaths.pSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break; //pSeries,11
@@ -1218,100 +294,17 @@ namespace KanaPractice {
                     XPaths.mSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/mSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.mSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.mSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.mSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.mSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.mSeries.hirg[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.mSeries.hirg[randomKana.Next(XPaths.mSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/mSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.mSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.mSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.mSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.mSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.mSeries.kata[4];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.mSeries.kata[randomKana.Next(XPaths.mSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//mSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.mSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.mSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.mSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.mSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.mSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.mSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.mSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.mSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.mSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.mSeries.mixed[9];
-                                break;
-                        }//end Switch Result
+                        strExpression = XPaths.mSeries.mixed[randomKana.Next(XPaths.mSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }//End If
                     break; //mSeries,12
@@ -1319,68 +312,17 @@ namespace KanaPractice {
                     XPaths.ySeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/ySeries/*";
-                        result = randomKana.Next(0, 3);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.ySeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.ySeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.ySeries.hirg[2];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.ySeries.hirg[randomKana.Next(XPaths.ySeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/ySeries/*";
-                        result = randomKana.Next(0, 3);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.ySeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.ySeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.ySeries.kata[2];
-                                break;
-                        }
+                        strExpression = XPaths.ySeries.kata[randomKana.Next(XPaths.ySeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//ySeries/*";
-                        result = randomKana.Next(0, 6);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.ySeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.ySeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.ySeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.ySeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.ySeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.ySeries.mixed[5];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.ySeries.mixed[randomKana.Next(XPaths.ySeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break;//ySeries,13
@@ -1389,100 +331,17 @@ namespace KanaPractice {
                     XPaths.rSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/rSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.rSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.rSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.rSeries.hirg[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.rSeries.hirg[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.rSeries.hirg[4];
-                                break;
-                        }
+                        strExpression = XPaths.rSeries.hirg[randomKana.Next(XPaths.rSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/rSeries/*";
-                        result = randomKana.Next(0, 5);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.rSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.rSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.rSeries.kata[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.rSeries.kata[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.rSeries.kata[4];
-                                break;
-                        }//end Switch result
+                        strExpression = XPaths.rSeries.kata[randomKana.Next(XPaths.rSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//rSeries/*";
-                        result = randomKana.Next(0, 10);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.rSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.rSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.rSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.rSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.rSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.rSeries.mixed[5];
-                                break;
-
-                            case 6:
-                                strExpression = XPaths.rSeries.mixed[6];
-                                break;
-
-                            case 7:
-                                strExpression = XPaths.rSeries.mixed[7];
-                                break;
-
-                            case 8:
-                                strExpression = XPaths.rSeries.mixed[8];
-                                break;
-
-                            case 9:
-                                strExpression = XPaths.rSeries.mixed[9];
-                                break;
-                        }
+                        strExpression = XPaths.rSeries.mixed[randomKana.Next(XPaths.rSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break;//rSeries,14
@@ -1490,74 +349,37 @@ namespace KanaPractice {
                     XPaths.wSeries.Init();
                     if (radHiragana.IsChecked == true) {
                         strExpression = "/kana/hirg/wSeries/*";
-                        result = randomKana.Next(0, 3);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.wSeries.hirg[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.wSeries.hirg[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.wSeries.hirg[2];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.wSeries.hirg[randomKana.Next(XPaths.wSeries.hirg.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radKatakana.IsChecked == true) {
                         strExpression = "/kana/kata/wSeries/*";
-                        result = randomKana.Next(0, 3);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.wSeries.kata[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.wSeries.kata[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.wSeries.kata[2];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.wSeries.kata[randomKana.Next(XPaths.wSeries.kata.Length)];
                         GetKana(nav, strExpression);
                     }
                     else if (radMixed.IsChecked == true) {
                         strExpression = "//wSeries/*";
-                        result = randomKana.Next(0, 6);
-                        switch (result) {
-                            case 0:
-                                strExpression = XPaths.wSeries.mixed[0];
-                                break;
-
-                            case 1:
-                                strExpression = XPaths.wSeries.mixed[1];
-                                break;
-
-                            case 2:
-                                strExpression = XPaths.wSeries.mixed[2];
-                                break;
-
-                            case 3:
-                                strExpression = XPaths.wSeries.mixed[3];
-                                break;
-
-                            case 4:
-                                strExpression = XPaths.wSeries.mixed[4];
-                                break;
-
-                            case 5:
-                                strExpression = XPaths.wSeries.mixed[5];
-                                break;
-                        }//end switch result
+                        strExpression = XPaths.wSeries.mixed[randomKana.Next(XPaths.wSeries.mixed.Length)];
                         GetKana(nav, strExpression);
                     }
                     break;//wSeries,15
                 case 16:
-                    //XPaths.comboSounds.Init();
+                    XPaths.comboSounds.Init();
                     //TODO add implementation for Compound sounds later
+                    if (radHiragana.IsChecked == true) {
+                        strExpression = "/kana/hirg/comboSounds/*";
+                        strExpression = XPaths.comboSounds.hirg[randomKana.Next(XPaths.comboSounds.hirg.Length)];
+                        GetKana(nav, strExpression);
+                    }
+                    else if (radKatakana.IsChecked == true) {
+                        strExpression = "/kana/kata/comboSounds/*";
+                        strExpression = XPaths.comboSounds.kata[randomKana.Next(XPaths.comboSounds.kata.Length)];
+                        GetKana(nav, strExpression);
+                    }
+                    else if (radMixed.IsChecked == true) {
+                        strExpression = "//comboSounds/*";
+                        strExpression = XPaths.comboSounds.mixed[randomKana.Next(XPaths.comboSounds.mixed.Length)];
+                    }
                     break;
             } //End Switch (ComboBox)
         } //end btnStartGame_Click
@@ -1572,7 +394,8 @@ namespace KanaPractice {
             Application.Current.Shutdown();
         }
 
-        private void GetNextKana(int sound) { }
+        private void GetNextKana(int sound) {
+        }
 
         private void OnKeyDown(object sender, KeyEventArgs e) {
         }

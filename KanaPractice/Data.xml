@@ -137,99 +137,63 @@
 		<comboSounds>
 			<comboK>
 				<kya romanji="kya" kana="きゃ" />
-				<!--0-->
 				<kyu romanji="kyu" kana="きゅ" />
-				<!--1-->
 				<kyo romanji="kyo" kana="きょ" />
-				<!--2-->
 			</comboK>
 			<comboG>
 				<gya romanji="gya" kana="ぎゃ" />
-				<!--3-->
 				<gyu romanji="gyu" kana="ぎゅ" />
-				<!--4-->
 				<gyo romanji="gyo" kana="ぎょ" />
-				<!--5-->
 			</comboG>
 			<comboS>
 				<sha romanji="sha" kana="しゃ" />
-				<!--6-->
 				<shu romanji="shu" kana="しゅ" />
-				<!--7-->
 				<sho romanji="sho" kana="しょ" />
-				<!--8-->
 			</comboS>
 			<comboJ>
 				<ja romanji="ja" kana="じゃ" />
-				<!--9-->
 				<ju romanji="ju" kana="じゅ" />
-				<!--10-->
 				<jo romanji="jo" kana="じょ" />
-				<!--11-->
 			</comboJ>
 			<comboCH>
 				<cha romanji="cha" kana="ちゃ" />
-				<!--12-->
 				<chu romanji="chu" kana="ちゅ" />
-				<!--13-->
 				<cho romanji="cho" kana="ちょ" />
-				<!--14-->
 			</comboCH>
 			<comboD>
 				<dya romanji="dya" kana="ぢゃ" />
-				<!--15-->
 				<dyu romanji="dyu" kana="ぢゅ" />
-				<!--16-->
 				<dyo romanji="dyo" kana="ぢょ" />
-				<!--17-->
 			</comboD>
 			<comboN>
 				<nya romanji="nya" kana="にゃ" />
-				<!--18-->
 				<nyu romanji="nyu" kana="にゅ" />
-				<!--19-->
 				<nyo romanji="nyo" kana="にょ" />
-				<!--20-->
 			</comboN>
 			<comboH>
 				<hya romanji="hya" kana="ひゃ" />
-				<!--21-->
 				<hyu romanji="hyu" kana="ひゅ" />
-				<!--22-->
 				<hyo romanji="hyo" kana="ひょ" />
-				<!--23-->
 			</comboH>
 			<comboB>
 				<bya romanji="bya" kana="びゃ" />
-				<!--24-->
 				<byu romanji="byu" kana="びゅ" />
-				<!--25-->
 				<byo romanji="byo" kana="びょ" />
-				<!--26-->
 			</comboB>
 			<comboP>
 				<pya romanji="pya" kana="ぴゃ" />
-				<!--27-->
 				<pyu romanji="pyu" kana="ぴゅ" />
-				<!--28-->
 				<pyo romanji="pyo" kana="ぴょ" />
-				<!--29-->
 			</comboP>
 			<comboM>
 				<mya romanji="mya" kana="みゃ" />
-				<!--30-->
 				<myu romanji="myu" kana="みゅ" />
-				<!--31-->
 				<myo romanji="myo" kana="みょ" />
-				<!--32-->
 			</comboM>
 			<comboR>
 				<rya romanji="rya" kana="りゃ" />
-				<!--33-->
 				<ryu romanji="ryu" kana="りゅ" />
-				<!--34-->
 				<ryo romanji="ryo" kana="りょ" />
-				<!--35-->
 			</comboR>
 		</comboSounds>
 		<!-- End Region -->
