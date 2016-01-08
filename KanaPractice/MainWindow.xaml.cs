@@ -368,6 +368,7 @@ namespace KanaPractice {
 		} //end btnStartGame_Click
 
 		private void btnCheck_Click(object sender, EventArgs e) {
+			Translation myChecker = new Translation();
 		}
 
 		private void btnNext_Click(object sender, EventArgs e) {

@@ -55,7 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Translation.cs" />
+    <Compile Include="Kana.cs" />
+    <Compile Include="Symbols.cs" />
     <Compile Include="XPaths.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
